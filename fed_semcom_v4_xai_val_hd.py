@@ -54,7 +54,7 @@ parser.add_argument("--data_root_2", default="./DIV2K_valid_HR")
 parser.add_argument("--device",    default="cuda",  choices=["cuda", "cpu", "mps"])
 parser.add_argument("--rounds",    type=int, default=1)
 parser.add_argument("--workers",   type=int, default=0)
-parser.add_argument("--batch_size",type=int, default=32)
+parser.add_argument("--batch_size",type=int, default=8)
 args = parser.parse_args()
 
 DATA_ROOT_1   = args.data_root_1
@@ -70,13 +70,14 @@ PIN_MEM     = DEVICE == "cuda"
 # ------------------------------------------------------------------
 NUM_CLIENTS      = 5            # K in the paper
 DIRICHLET_ALPHA  = 1.0          # α controls non-IID level
-LOCAL_EPOCHS     = 8            # each client's local passes
-LR               = 1e-3
+LOCAL_EPOCHS     = 82           # each client's local passes
+LR               = 5e-4
 BOTTLENECK       = 1024         # semantic latent size
 COMPRESSED       = 64           # channel code length
 COMPRESS_RATIO   = (64 * 64 * 3) / BOTTLENECK  # informational ratio ≈ 12 ×
 SNR_DB           = 10           # channel SNR during training
 ALPHA_LOSS       = 0.9          # weight for the MSE term in hybrid loss
+GRADIENT_CLIP = 0.5 
 
 # ------------------------------------------------------------------
 # Performance optimizations
@@ -809,6 +810,7 @@ def local_train_optimized(model, loader, epochs: int):
                 scaler.update()
             else:
                 loss.backward()
+                torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=0.5)
                 opt.step()
             
             final_loss = loss.item()
