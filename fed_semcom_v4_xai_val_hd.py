@@ -783,20 +783,22 @@ class ExplainabilityVisualizer:
 def local_train_optimized(model, loader, epochs: int):
     model.train()
     opt = optim.Adam(model.parameters(), lr=LR)
-    
-    # Add automatic mixed precision for faster training
     scaler = torch.cuda.amp.GradScaler(enabled=USE_FP16)
     
-    start_time = time.time()
     final_loss = 0.0
     
     for _ in range(epochs):
         for img, _ in loader:
-            img = img.to(DEVICE, non_blocking=True)  # Use non_blocking for better parallelism
+            # 🎯 KEY CHANGE: 20% chance to train on 256x256
+            if random.random() < 0.2:
+                img = F.interpolate(img, size=(256, 256), mode='bilinear', align_corners=False)
+                # Use smaller batch for 256x256 to avoid memory issues
+                if img.size(0) > 8:
+                    img = img[:8]  # Take only first 8 samples
             
-            opt.zero_grad(set_to_none=True)  # More efficient than zero_grad()
+            img = img.to(DEVICE, non_blocking=True)
+            opt.zero_grad(set_to_none=True)
             
-            # Use mixed precision training if available
             with torch.cuda.amp.autocast(enabled=USE_FP16):
                 recon = model(img)
                 loss = perceptual_loss(recon, img)
@@ -811,8 +813,7 @@ def local_train_optimized(model, loader, epochs: int):
             
             final_loss = loss.item()
     
-    training_time = time.time() - start_time
-    return final_loss, training_time
+    return final_loss, 0.0
 
 
 # ------------------------------------------------------------------
