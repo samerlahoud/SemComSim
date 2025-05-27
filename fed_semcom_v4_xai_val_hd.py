@@ -70,7 +70,7 @@ PIN_MEM     = DEVICE == "cuda"
 # ------------------------------------------------------------------
 NUM_CLIENTS      = 5            # K in the paper
 DIRICHLET_ALPHA  = 1.0          # α controls non-IID level
-LOCAL_EPOCHS     = 4            # each client's local passes
+LOCAL_EPOCHS     = 8            # each client's local passes
 LR               = 1e-3
 BOTTLENECK       = 1024         # semantic latent size
 COMPRESSED       = 64           # channel code length
