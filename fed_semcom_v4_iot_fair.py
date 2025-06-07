@@ -28,7 +28,7 @@ NUM_CLIENTS      = 10           # Total clients
 DYNAMIC_EPOCHS   = False        # Enable dynamic epochs
 EPOCHS           = 3
 DIRICHLET_ALPHA  = 1.0          # Non-IID level
-ROUNDS           = 35           # Training rounds
+ROUNDS           = 50           # Training rounds
 BATCH_SIZE       = 16           # Batch size
 LR               = 3e-4         # Learning rate
 BOTTLENECK       = 256          # Semantic bottleneck
@@ -38,7 +38,7 @@ ALPHA_LOSS       = 0.8          # Loss weighting
 PIXELS           = 64 * 64 * 3  # Image pixels
 
 # NEW: Client Selection Strategy Configuration
-CLIENT_SELECTION = "utilitarian"  # "utilitarian", "proportional", or "baseline"
+CLIENT_SELECTION = "proportional"  # "utilitarian", "proportional", or "baseline"
 CLIENTS_PER_ROUND = 6             # Number of clients selected each round
 TARGET_EFFORT = 1000              # Target training steps per client (for proportional fairness)
 MAX_EPOCHS_CAP = 15               # Maximum epochs to prevent overfitting
