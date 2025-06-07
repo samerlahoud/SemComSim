@@ -38,7 +38,7 @@ ALPHA_LOSS       = 0.8          # Loss weighting
 PIXELS           = 64 * 64 * 3  # Image pixels
 
 # NEW: Client Selection Strategy Configuration
-CLIENT_SELECTION = "proportional"  # "utilitarian", "proportional", or "baseline"
+CLIENT_SELECTION = "utilitarian"  # "utilitarian", "proportional", or "baseline"
 CLIENTS_PER_ROUND = 6             # Number of clients selected each round
 TARGET_EFFORT = 1000              # Target training steps per client (for proportional fairness)
 MAX_EPOCHS_CAP = 15               # Maximum epochs to prevent overfitting
