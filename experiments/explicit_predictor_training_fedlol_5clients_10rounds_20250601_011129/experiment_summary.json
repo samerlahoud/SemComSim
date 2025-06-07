@@ -1,0 +1,56 @@
+{
+  "experiment_name": "explicit_predictor_training_fedlol_5clients_10rounds_20250601_011129",
+  "total_rounds": 10,
+  "total_clients": 5,
+  "adaptation_type": "learned",
+  "final_performance": {
+    "psnr": 31.124335478920013,
+    "avg_loss": -0.03132854289377432,
+    "avg_bottleneck": 103.0,
+    "compression_ratio": 0.59765625
+  },
+  "convergence_analysis": {
+    "psnr_improvement_total": 9.500486516890067,
+    "best_psnr": 31.124335478920013,
+    "convergence_round": 6,
+    "final_stability": 0.10950724667898455
+  },
+  "efficiency_metrics": {
+    "avg_compression_ratio": 0.536328125,
+    "max_compression_achieved": 0.59765625,
+    "resource_savings_percent": 53.63281250000001
+  },
+  "client_type_performance": {
+    "mid_range": {
+      "count": 3,
+      "avg_loss": -0.03567813012258847,
+      "avg_bottleneck": 152.46666666666667,
+      "bottleneck_range": [
+        128,
+        213
+      ]
+    },
+    "low_power": {
+      "count": 1,
+      "avg_loss": -0.03537631489562776,
+      "avg_bottleneck": 72.1,
+      "bottleneck_range": [
+        64,
+        91
+      ]
+    },
+    "ultra_low": {
+      "count": 1,
+      "avg_loss": -0.02394094391083666,
+      "avg_bottleneck": 64.0,
+      "bottleneck_range": [
+        64,
+        64
+      ]
+    }
+  },
+  "channel_diversity": {
+    "max_snr_spread": 16.922574104404813,
+    "avg_snr_diversity": 5.328965009336227
+  }
+}

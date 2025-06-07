@@ -1,0 +1,57 @@
+[
+  {
+    "client_id": 1,
+    "device_type": "low_power",
+    "description": "ESP32, Arduino",
+    "max_bottleneck": 128,
+    "min_bottleneck": 64,
+    "power_budget": 0.4,
+    "initial_energy": 0.43154199629409756,
+    "base_snr": 3.756708718274732,
+    "channel_variance": 4.063141030835816
+  },
+  {
+    "client_id": 2,
+    "device_type": "mid_range",
+    "description": "ESP32-S3, powerful MCU",
+    "max_bottleneck": 256,
+    "min_bottleneck": 128,
+    "power_budget": 0.7,
+    "initial_energy": 0.5105687028953024,
+    "base_snr": 12.21070348655473,
+    "channel_variance": 5.588129557886634
+  },
+  {
+    "client_id": 3,
+    "device_type": "mid_range",
+    "description": "ESP32-S3, powerful MCU",
+    "max_bottleneck": 256,
+    "min_bottleneck": 128,
+    "power_budget": 0.7,
+    "initial_energy": 0.8084136198565319,
+    "base_snr": 15.332286086450104,
+    "channel_variance": 3.359949436760228
+  },
+  {
+    "client_id": 4,
+    "device_type": "mid_range",
+    "description": "ESP32-S3, powerful MCU",
+    "max_bottleneck": 256,
+    "min_bottleneck": 128,
+    "power_budget": 0.7,
+    "initial_energy": 0.5743240945430985,
+    "base_snr": 13.89022928161947,
+    "channel_variance": 5.513812717382455
+  },
+  {
+    "client_id": 5,
+    "device_type": "low_power",
+    "description": "ESP32, Arduino",
+    "max_bottleneck": 128,
+    "min_bottleneck": 64,
+    "power_budget": 0.4,
+    "initial_energy": 0.6884927966297277,
+    "base_snr": 13.265795479828247,
+    "channel_variance": 4.8472186703494495
+  }
+]

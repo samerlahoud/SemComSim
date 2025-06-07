@@ -1,0 +1,46 @@
+{
+  "experiment_name": "adaptive_fedlol_5clients_10rounds_20250531_215207",
+  "total_rounds": 10,
+  "total_clients": 5,
+  "final_performance": {
+    "psnr": 31.139031026223037,
+    "avg_loss": 0.0040576978335226865,
+    "avg_bottleneck": 150.4,
+    "compression_ratio": 0.4125
+  },
+  "convergence_analysis": {
+    "psnr_improvement_total": 9.020632707385921,
+    "best_psnr": 31.139031026223037,
+    "convergence_round": 8,
+    "final_stability": 0.09081980010119102
+  },
+  "efficiency_metrics": {
+    "avg_compression_ratio": 0.4074999999999999,
+    "max_compression_achieved": 0.4625,
+    "resource_savings_percent": 40.75
+  },
+  "client_type_performance": {
+    "mid_range": {
+      "count": 3,
+      "avg_loss": 0.00793378956694902,
+      "avg_bottleneck": 196.26666666666668,
+      "bottleneck_range": [
+        144,
+        256
+      ]
+    },
+    "low_power": {
+      "count": 2,
+      "avg_loss": 0.007669068028488063,
+      "avg_bottleneck": 84.8,
+      "bottleneck_range": [
+        64,
+        128
+      ]
+    }
+  },
+  "channel_diversity": {
+    "max_snr_spread": 15.293437092946053,
+    "avg_snr_diversity": 4.38145902192876
+  }
+}

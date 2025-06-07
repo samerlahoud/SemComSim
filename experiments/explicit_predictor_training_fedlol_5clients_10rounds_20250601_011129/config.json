@@ -1,0 +1,18 @@
+{
+  "num_clients": 5,
+  "rounds": 10,
+  "batch_size": 16,
+  "learning_rate": 0.0003,
+  "min_bottleneck": 64,
+  "max_bottleneck": 512,
+  "default_bottleneck": 256,
+  "compressed_dims": 32,
+  "default_snr_db": 10,
+  "alpha_loss": 0.8,
+  "dynamic_epochs": false,
+  "epochs": 3,
+  "dirichlet_alpha": 1.0,
+  "seed": 42,
+  "device": "mps",
+  "adaptation_type": "learned"
+}

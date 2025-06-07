@@ -1,0 +1,1496 @@
+Last login: Thu Jun  5 10:05:58 on ttys022
+(base) simurgh@simurgh ~ % cd /Users/simurgh/Documents/Dal/Research/Myworks/sem-com/SemComSim/                                       
+(base) simurgh@simurgh SemComSim % python fed_semcom_v4_iot_fair.py  
+Using device: mps
+FedLoL IoT v11 - Client Selection Strategy: PROPORTIONAL
+Configuration: 10 clients, 6 selected per round, 35 rounds
+Using Tiny ImageNet dataset
+Model size: 17.53 MB
+Total parameters: 4,596,227
+
+Client Data Distribution:
+  Client 1: 2902 samples
+  Client 2: 2452 samples
+  Client 3: 2356 samples
+  Client 4: 2221 samples
+  Client 5: 2887 samples
+  Client 6: 2254 samples
+  Client 7: 2888 samples
+  Client 8: 2354 samples
+  Client 9: 2045 samples
+  Client 10: 2638 samples
+
+Starting federated training for 35 rounds...
+================================================================================
+
+Round 01
+Selected clients: [(8, 1), (7, 1), (9, 1), (4, 1), (1, 1), (5, 1)]
+  Client 8: 1 epochs, 2354 samples, Effort=2354, Loss=0.0597
+  Client 7: 1 epochs, 2888 samples, Effort=2888, Loss=0.0537
+  Client 9: 1 epochs, 2045 samples, Effort=2045, Loss=0.0640
+  Client 4: 1 epochs, 2221 samples, Effort=2221, Loss=0.0627
+  Client 1: 1 epochs, 2902 samples, Effort=2902, Loss=0.0543
+  Client 5: 1 epochs, 2887 samples, Effort=2887, Loss=0.0547
+Round 01 │ MSE=0.0157 │ PSNR=18.05 dB │ Avg Loss=0.0582 │ Loss Std=0.0041
+         │ Participation Gini=0.400 │ Effort Gini=0.445
+--------------------------------------------------------------------------------
+
+Round 02
+Selected clients: [(8, 1), (7, 1), (9, 1), (4, 1), (6, 1), (2, 1)]
+  Client 8: 1 epochs, 2354 samples, Effort=2354, Loss=0.0277
+  Client 7: 1 epochs, 2888 samples, Effort=2888, Loss=0.0267
+  Client 9: 1 epochs, 2045 samples, Effort=2045, Loss=0.0264
+  Client 4: 1 epochs, 2221 samples, Effort=2221, Loss=0.0279
+  Client 6: 1 epochs, 2254 samples, Effort=2254, Loss=0.0276
+  Client 2: 1 epochs, 2452 samples, Effort=2452, Loss=0.0284
+Round 02 │ MSE=0.0121 │ PSNR=19.16 dB │ Avg Loss=0.0274 │ Loss Std=0.0007
+         │ Participation Gini=0.333 │ Effort Gini=0.342
+--------------------------------------------------------------------------------
+
+Round 03
+Selected clients: [(8, 1), (10, 1), (9, 1), (3, 1), (5, 1), (6, 1)]
+  Client 8: 1 epochs, 2354 samples, Effort=2354, Loss=0.0236
+  Client 10: 1 epochs, 2638 samples, Effort=2638, Loss=0.0234
+  Client 9: 1 epochs, 2045 samples, Effort=2045, Loss=0.0227
+  Client 3: 1 epochs, 2356 samples, Effort=2356, Loss=0.0240
+  Client 5: 1 epochs, 2887 samples, Effort=2887, Loss=0.0241
+  Client 6: 1 epochs, 2254 samples, Effort=2254, Loss=0.0246
+Round 03 │ MSE=0.0106 │ PSNR=19.75 dB │ Avg Loss=0.0237 │ Loss Std=0.0006
+         │ Participation Gini=0.222 │ Effort Gini=0.210
+--------------------------------------------------------------------------------
+
+Round 04
+Selected clients: [(6, 1), (5, 1), (9, 1), (10, 1), (8, 1), (3, 1)]
+  Client 6: 1 epochs, 2254 samples, Effort=2254, Loss=0.0223
+  Client 5: 1 epochs, 2887 samples, Effort=2887, Loss=0.0217
+  Client 9: 1 epochs, 2045 samples, Effort=2045, Loss=0.0211
+  Client 10: 1 epochs, 2638 samples, Effort=2638, Loss=0.0211
+  Client 8: 1 epochs, 2354 samples, Effort=2354, Loss=0.0219
+  Client 3: 1 epochs, 2356 samples, Effort=2356, Loss=0.0225
+Round 04 │ MSE=0.0094 │ PSNR=20.25 dB │ Avg Loss=0.0218 │ Loss Std=0.0005
+         │ Participation Gini=0.233 │ Effort Gini=0.219
+--------------------------------------------------------------------------------
+
+Round 05
+Selected clients: [(2, 1), (5, 1), (7, 1), (10, 1), (8, 1), (3, 1)]
+  Client 2: 1 epochs, 2452 samples, Effort=2452, Loss=0.0208
+  Client 5: 1 epochs, 2887 samples, Effort=2887, Loss=0.0204
+  Client 7: 1 epochs, 2888 samples, Effort=2888, Loss=0.0195
+  Client 10: 1 epochs, 2638 samples, Effort=2638, Loss=0.0188
+  Client 8: 1 epochs, 2354 samples, Effort=2354, Loss=0.0201
+  Client 3: 1 epochs, 2356 samples, Effort=2356, Loss=0.0203
+Round 05 │ MSE=0.0084 │ PSNR=20.75 dB │ Avg Loss=0.0200 │ Loss Std=0.0006
+         │ Participation Gini=0.200 │ Effort Gini=0.207
+--------------------------------------------------------------------------------
+
+Round 06
+Selected clients: [(5, 1), (9, 1), (8, 1), (6, 1), (3, 1), (7, 1)]
+  Client 5: 1 epochs, 2887 samples, Effort=2887, Loss=0.0184
+  Client 9: 1 epochs, 2045 samples, Effort=2045, Loss=0.0175
+  Client 8: 1 epochs, 2354 samples, Effort=2354, Loss=0.0186
+  Client 6: 1 epochs, 2254 samples, Effort=2254, Loss=0.0185
+  Client 3: 1 epochs, 2356 samples, Effort=2356, Loss=0.0185
+  Client 7: 1 epochs, 2888 samples, Effort=2888, Loss=0.0174
+Round 06 │ MSE=0.0076 │ PSNR=21.19 dB │ Avg Loss=0.0181 │ Loss Std=0.0005
+         │ Participation Gini=0.233 │ Effort Gini=0.239
+--------------------------------------------------------------------------------
+
+Round 07
+Selected clients: [(2, 1), (10, 1), (8, 1), (4, 1), (3, 1), (6, 1)]
+  Client 2: 1 epochs, 2452 samples, Effort=2452, Loss=0.0176
+  Client 10: 1 epochs, 2638 samples, Effort=2638, Loss=0.0163
+  Client 8: 1 epochs, 2354 samples, Effort=2354, Loss=0.0174
+  Client 4: 1 epochs, 2221 samples, Effort=2221, Loss=0.0176
+  Client 3: 1 epochs, 2356 samples, Effort=2356, Loss=0.0175
+  Client 6: 1 epochs, 2254 samples, Effort=2254, Loss=0.0175
+Round 07 │ MSE=0.0070 │ PSNR=21.56 dB │ Avg Loss=0.0173 │ Loss Std=0.0005
+         │ Participation Gini=0.195 │ Effort Gini=0.197
+--------------------------------------------------------------------------------
+
+Round 08
+Selected clients: [(10, 1), (6, 1), (1, 1), (4, 1), (9, 1), (5, 1)]
+  Client 10: 1 epochs, 2638 samples, Effort=2638, Loss=0.0159
+  Client 6: 1 epochs, 2254 samples, Effort=2254, Loss=0.0160
+  Client 1: 1 epochs, 2902 samples, Effort=2902, Loss=0.0159
+  Client 4: 1 epochs, 2221 samples, Effort=2221, Loss=0.0160
+  Client 9: 1 epochs, 2045 samples, Effort=2045, Loss=0.0159
+  Client 5: 1 epochs, 2887 samples, Effort=2887, Loss=0.0165
+Round 08 │ MSE=0.0064 │ PSNR=21.93 dB │ Avg Loss=0.0160 │ Loss Std=0.0002
+         │ Participation Gini=0.171 │ Effort Gini=0.166
+--------------------------------------------------------------------------------
+
+Round 09
+Selected clients: [(10, 1), (8, 1), (5, 1), (6, 1), (1, 1), (7, 1)]
+  Client 10: 1 epochs, 2638 samples, Effort=2638, Loss=0.0144
+  Client 8: 1 epochs, 2354 samples, Effort=2354, Loss=0.0154
+  Client 5: 1 epochs, 2887 samples, Effort=2887, Loss=0.0156
+  Client 6: 1 epochs, 2254 samples, Effort=2254, Loss=0.0159
+  Client 1: 1 epochs, 2902 samples, Effort=2902, Loss=0.0154
+  Client 7: 1 epochs, 2888 samples, Effort=2888, Loss=0.0146
+Round 09 │ MSE=0.0058 │ PSNR=22.35 dB │ Avg Loss=0.0152 │ Loss Std=0.0005
+         │ Participation Gini=0.170 │ Effort Gini=0.176
+--------------------------------------------------------------------------------
+
+Round 10
+Selected clients: [(2, 1), (4, 1), (3, 1), (6, 1), (9, 1), (5, 1)]
+  Client 2: 1 epochs, 2452 samples, Effort=2452, Loss=0.0152
+  Client 4: 1 epochs, 2221 samples, Effort=2221, Loss=0.0141
+  Client 3: 1 epochs, 2356 samples, Effort=2356, Loss=0.0152
+  Client 6: 1 epochs, 2254 samples, Effort=2254, Loss=0.0153
+  Client 9: 1 epochs, 2045 samples, Effort=2045, Loss=0.0142
+  Client 5: 1 epochs, 2887 samples, Effort=2887, Loss=0.0148
+Round 10 │ MSE=0.0054 │ PSNR=22.67 dB │ Avg Loss=0.0148 │ Loss Std=0.0005
+         │ Participation Gini=0.157 │ Effort Gini=0.157
+--------------------------------------------------------------------------------
+
+Round 11
+Selected clients: [(10, 1), (3, 1), (8, 1), (6, 1), (1, 1), (7, 1)]
+  Client 10: 1 epochs, 2638 samples, Effort=2638, Loss=0.0129
+  Client 3: 1 epochs, 2356 samples, Effort=2356, Loss=0.0148
+  Client 8: 1 epochs, 2354 samples, Effort=2354, Loss=0.0145
+  Client 6: 1 epochs, 2254 samples, Effort=2254, Loss=0.0142
+  Client 1: 1 epochs, 2902 samples, Effort=2902, Loss=0.0144
+  Client 7: 1 epochs, 2888 samples, Effort=2888, Loss=0.0139
+Round 11 │ MSE=0.0050 │ PSNR=23.01 dB │ Avg Loss=0.0141 │ Loss Std=0.0006
+         │ Participation Gini=0.148 │ Effort Gini=0.151
+--------------------------------------------------------------------------------
+
+Round 12
+Selected clients: [(6, 1), (8, 1), (10, 1), (7, 1), (3, 1), (2, 1)]
+  Client 6: 1 epochs, 2254 samples, Effort=2254, Loss=0.0131
+  Client 8: 1 epochs, 2354 samples, Effort=2354, Loss=0.0132
+  Client 10: 1 epochs, 2638 samples, Effort=2638, Loss=0.0130
+  Client 7: 1 epochs, 2888 samples, Effort=2888, Loss=0.0130
+  Client 3: 1 epochs, 2356 samples, Effort=2356, Loss=0.0135
+  Client 2: 1 epochs, 2452 samples, Effort=2452, Loss=0.0139
+Round 12 │ MSE=0.0046 │ PSNR=23.40 dB │ Avg Loss=0.0133 │ Loss Std=0.0003
+         │ Participation Gini=0.150 │ Effort Gini=0.149
+--------------------------------------------------------------------------------
+
+Round 13
+Selected clients: [(5, 1), (2, 1), (6, 1), (4, 1), (9, 1), (3, 1)]
+  Client 5: 1 epochs, 2887 samples, Effort=2887, Loss=0.0128
+  Client 2: 1 epochs, 2452 samples, Effort=2452, Loss=0.0132
+  Client 6: 1 epochs, 2254 samples, Effort=2254, Loss=0.0131
+  Client 4: 1 epochs, 2221 samples, Effort=2221, Loss=0.0129
+  Client 9: 1 epochs, 2045 samples, Effort=2045, Loss=0.0125
+  Client 3: 1 epochs, 2356 samples, Effort=2356, Loss=0.0132
+Round 13 │ MSE=0.0042 │ PSNR=23.73 dB │ Avg Loss=0.0129 │ Loss Std=0.0003
+         │ Participation Gini=0.144 │ Effort Gini=0.140
+--------------------------------------------------------------------------------
+
+Round 14
+Selected clients: [(7, 1), (3, 1), (1, 1), (8, 1), (2, 1), (10, 1)]
+  Client 7: 1 epochs, 2888 samples, Effort=2888, Loss=0.0115
+  Client 3: 1 epochs, 2356 samples, Effort=2356, Loss=0.0124
+  Client 1: 1 epochs, 2902 samples, Effort=2902, Loss=0.0123
+  Client 8: 1 epochs, 2354 samples, Effort=2354, Loss=0.0124
+  Client 2: 1 epochs, 2452 samples, Effort=2452, Loss=0.0125
+  Client 10: 1 epochs, 2638 samples, Effort=2638, Loss=0.0120
+Round 14 │ MSE=0.0039 │ PSNR=24.07 dB │ Avg Loss=0.0122 │ Loss Std=0.0004
+         │ Participation Gini=0.129 │ Effort Gini=0.123
+--------------------------------------------------------------------------------
+
+Round 15
+Selected clients: [(10, 1), (4, 1), (2, 1), (7, 1), (3, 1), (6, 1)]
+  Client 10: 1 epochs, 2638 samples, Effort=2638, Loss=0.0111
+  Client 4: 1 epochs, 2221 samples, Effort=2221, Loss=0.0116
+  Client 2: 1 epochs, 2452 samples, Effort=2452, Loss=0.0120
+  Client 7: 1 epochs, 2888 samples, Effort=2888, Loss=0.0112
+  Client 3: 1 epochs, 2356 samples, Effort=2356, Loss=0.0120
+  Client 6: 1 epochs, 2254 samples, Effort=2254, Loss=0.0119
+Round 15 │ MSE=0.0036 │ PSNR=24.47 dB │ Avg Loss=0.0117 │ Loss Std=0.0004
+         │ Participation Gini=0.124 │ Effort Gini=0.115
+--------------------------------------------------------------------------------
+
+Round 16
+Selected clients: [(7, 1), (3, 1), (10, 1), (9, 1), (5, 1), (2, 1)]
+  Client 7: 1 epochs, 2888 samples, Effort=2888, Loss=0.0109
+  Client 3: 1 epochs, 2356 samples, Effort=2356, Loss=0.0111
+  Client 10: 1 epochs, 2638 samples, Effort=2638, Loss=0.0106
+  Client 9: 1 epochs, 2045 samples, Effort=2045, Loss=0.0104
+  Client 5: 1 epochs, 2887 samples, Effort=2887, Loss=0.0113
+  Client 2: 1 epochs, 2452 samples, Effort=2452, Loss=0.0110
+Round 16 │ MSE=0.0033 │ PSNR=24.84 dB │ Avg Loss=0.0109 │ Loss Std=0.0003
+         │ Participation Gini=0.119 │ Effort Gini=0.124
+--------------------------------------------------------------------------------
+
+Round 17
+Selected clients: [(7, 1), (8, 1), (3, 1), (6, 1), (5, 1), (4, 1)]
+  Client 7: 1 epochs, 2888 samples, Effort=2888, Loss=0.0101
+  Client 8: 1 epochs, 2354 samples, Effort=2354, Loss=0.0106
+  Client 3: 1 epochs, 2356 samples, Effort=2356, Loss=0.0108
+  Client 6: 1 epochs, 2254 samples, Effort=2254, Loss=0.0108
+  Client 5: 1 epochs, 2887 samples, Effort=2887, Loss=0.0103
+  Client 4: 1 epochs, 2221 samples, Effort=2221, Loss=0.0107
+Round 17 │ MSE=0.0030 │ PSNR=25.25 dB │ Avg Loss=0.0105 │ Loss Std=0.0003
+         │ Participation Gini=0.125 │ Effort Gini=0.133
+--------------------------------------------------------------------------------
+
+Round 18
+Selected clients: [(7, 1), (4, 1), (1, 1), (10, 1), (3, 1), (2, 1)]
+  Client 7: 1 epochs, 2888 samples, Effort=2888, Loss=0.0099
+  Client 4: 1 epochs, 2221 samples, Effort=2221, Loss=0.0096
+  Client 1: 1 epochs, 2902 samples, Effort=2902, Loss=0.0099
+  Client 10: 1 epochs, 2638 samples, Effort=2638, Loss=0.0097
+  Client 3: 1 epochs, 2356 samples, Effort=2356, Loss=0.0105
+  Client 2: 1 epochs, 2452 samples, Effort=2452, Loss=0.0103
+Round 18 │ MSE=0.0027 │ PSNR=25.62 dB │ Avg Loss=0.0100 │ Loss Std=0.0003
+         │ Participation Gini=0.113 │ Effort Gini=0.126
+--------------------------------------------------------------------------------
+
+Round 19
+Selected clients: [(3, 1), (1, 1), (8, 1), (10, 1), (9, 1), (5, 1)]
+  Client 3: 1 epochs, 2356 samples, Effort=2356, Loss=0.0094
+  Client 1: 1 epochs, 2902 samples, Effort=2902, Loss=0.0094
+  Client 8: 1 epochs, 2354 samples, Effort=2354, Loss=0.0097
+  Client 10: 1 epochs, 2638 samples, Effort=2638, Loss=0.0093
+  Client 9: 1 epochs, 2045 samples, Effort=2045, Loss=0.0094
+  Client 5: 1 epochs, 2887 samples, Effort=2887, Loss=0.0096
+Round 19 │ MSE=0.0025 │ PSNR=25.96 dB │ Avg Loss=0.0095 │ Loss Std=0.0001
+         │ Participation Gini=0.109 │ Effort Gini=0.120
+--------------------------------------------------------------------------------
+
+Round 20
+Selected clients: [(3, 1), (8, 1), (10, 1), (2, 1), (9, 1), (7, 1)]
+  Client 3: 1 epochs, 2356 samples, Effort=2356, Loss=0.0094
+  Client 8: 1 epochs, 2354 samples, Effort=2354, Loss=0.0091
+  Client 10: 1 epochs, 2638 samples, Effort=2638, Loss=0.0089
+  Client 2: 1 epochs, 2452 samples, Effort=2452, Loss=0.0090
+  Client 9: 1 epochs, 2045 samples, Effort=2045, Loss=0.0087
+  Client 7: 1 epochs, 2888 samples, Effort=2888, Loss=0.0087
+Round 20 │ MSE=0.0023 │ PSNR=26.29 dB │ Avg Loss=0.0090 │ Loss Std=0.0003
+         │ Participation Gini=0.115 │ Effort Gini=0.127
+--------------------------------------------------------------------------------
+
+Round 21
+Selected clients: [(1, 1), (6, 1), (5, 1), (2, 1), (4, 1), (8, 1)]
+  Client 1: 1 epochs, 2902 samples, Effort=2902, Loss=0.0087
+  Client 6: 1 epochs, 2254 samples, Effort=2254, Loss=0.0092
+  Client 5: 1 epochs, 2887 samples, Effort=2887, Loss=0.0088
+  Client 2: 1 epochs, 2452 samples, Effort=2452, Loss=0.0091
+  Client 4: 1 epochs, 2221 samples, Effort=2221, Loss=0.0091
+  Client 8: 1 epochs, 2354 samples, Effort=2354, Loss=0.0088
+Round 21 │ MSE=0.0022 │ PSNR=26.57 dB │ Avg Loss=0.0089 │ Loss Std=0.0002
+         │ Participation Gini=0.102 │ Effort Gini=0.109
+--------------------------------------------------------------------------------
+
+Round 22
+Selected clients: [(8, 1), (4, 1), (3, 1), (1, 1), (2, 1), (9, 1)]
+  Client 8: 1 epochs, 2354 samples, Effort=2354, Loss=0.0084
+  Client 4: 1 epochs, 2221 samples, Effort=2221, Loss=0.0086
+  Client 3: 1 epochs, 2356 samples, Effort=2356, Loss=0.0086
+  Client 1: 1 epochs, 2902 samples, Effort=2902, Loss=0.0083
+  Client 2: 1 epochs, 2452 samples, Effort=2452, Loss=0.0087
+  Client 9: 1 epochs, 2045 samples, Effort=2045, Loss=0.0079
+Round 22 │ MSE=0.0021 │ PSNR=26.87 dB │ Avg Loss=0.0084 │ Loss Std=0.0003
+         │ Participation Gini=0.091 │ Effort Gini=0.095
+--------------------------------------------------------------------------------
+
+Round 23
+Selected clients: [(3, 1), (5, 1), (9, 1), (10, 1), (8, 1), (1, 1)]
+  Client 3: 1 epochs, 2356 samples, Effort=2356, Loss=0.0084
+  Client 5: 1 epochs, 2887 samples, Effort=2887, Loss=0.0077
+  Client 9: 1 epochs, 2045 samples, Effort=2045, Loss=0.0080
+  Client 10: 1 epochs, 2638 samples, Effort=2638, Loss=0.0077
+  Client 8: 1 epochs, 2354 samples, Effort=2354, Loss=0.0082
+  Client 1: 1 epochs, 2902 samples, Effort=2902, Loss=0.0080
+Round 23 │ MSE=0.0019 │ PSNR=27.16 dB │ Avg Loss=0.0080 │ Loss Std=0.0002
+         │ Participation Gini=0.093 │ Effort Gini=0.100
+--------------------------------------------------------------------------------
+
+Round 24
+Selected clients: [(1, 1), (6, 1), (3, 1), (9, 1), (5, 1), (10, 1)]
+  Client 1: 1 epochs, 2902 samples, Effort=2902, Loss=0.0078
+  Client 6: 1 epochs, 2254 samples, Effort=2254, Loss=0.0081
+  Client 3: 1 epochs, 2356 samples, Effort=2356, Loss=0.0080
+  Client 9: 1 epochs, 2045 samples, Effort=2045, Loss=0.0076
+  Client 5: 1 epochs, 2887 samples, Effort=2887, Loss=0.0075
+  Client 10: 1 epochs, 2638 samples, Effort=2638, Loss=0.0077
+Round 24 │ MSE=0.0018 │ PSNR=27.42 dB │ Avg Loss=0.0078 │ Loss Std=0.0002
+         │ Participation Gini=0.094 │ Effort Gini=0.102
+--------------------------------------------------------------------------------
+
+Round 25
+Selected clients: [(10, 1), (8, 1), (5, 1), (4, 1), (9, 1), (1, 1)]
+  Client 10: 1 epochs, 2638 samples, Effort=2638, Loss=0.0075
+  Client 8: 1 epochs, 2354 samples, Effort=2354, Loss=0.0074
+  Client 5: 1 epochs, 2887 samples, Effort=2887, Loss=0.0076
+  Client 4: 1 epochs, 2221 samples, Effort=2221, Loss=0.0074
+  Client 9: 1 epochs, 2045 samples, Effort=2045, Loss=0.0072
+  Client 1: 1 epochs, 2902 samples, Effort=2902, Loss=0.0072
+Round 25 │ MSE=0.0017 │ PSNR=27.69 dB │ Avg Loss=0.0074 │ Loss Std=0.0001
+         │ Participation Gini=0.089 │ Effort Gini=0.098
+--------------------------------------------------------------------------------
+
+Round 26
+Selected clients: [(10, 1), (4, 1), (6, 1), (2, 1), (7, 1), (8, 1)]
+  Client 10: 1 epochs, 2638 samples, Effort=2638, Loss=0.0069
+  Client 4: 1 epochs, 2221 samples, Effort=2221, Loss=0.0072
+  Client 6: 1 epochs, 2254 samples, Effort=2254, Loss=0.0072
+  Client 2: 1 epochs, 2452 samples, Effort=2452, Loss=0.0074
+  Client 7: 1 epochs, 2888 samples, Effort=2888, Loss=0.0067
+  Client 8: 1 epochs, 2354 samples, Effort=2354, Loss=0.0068
+Round 26 │ MSE=0.0016 │ PSNR=27.96 dB │ Avg Loss=0.0070 │ Loss Std=0.0002
+         │ Participation Gini=0.085 │ Effort Gini=0.093
+--------------------------------------------------------------------------------
+
+Round 27
+Selected clients: [(4, 1), (2, 1), (3, 1), (10, 1), (8, 1), (6, 1)]
+  Client 4: 1 epochs, 2221 samples, Effort=2221, Loss=0.0071
+  Client 2: 1 epochs, 2452 samples, Effort=2452, Loss=0.0072
+  Client 3: 1 epochs, 2356 samples, Effort=2356, Loss=0.0072
+  Client 10: 1 epochs, 2638 samples, Effort=2638, Loss=0.0069
+  Client 8: 1 epochs, 2354 samples, Effort=2354, Loss=0.0070
+  Client 6: 1 epochs, 2254 samples, Effort=2254, Loss=0.0073
+Round 27 │ MSE=0.0015 │ PSNR=28.15 dB │ Avg Loss=0.0071 │ Loss Std=0.0001
+         │ Participation Gini=0.090 │ Effort Gini=0.094
+--------------------------------------------------------------------------------
+
+Round 28
+Selected clients: [(10, 1), (5, 1), (3, 1), (6, 1), (9, 1), (8, 1)]
+  Client 10: 1 epochs, 2638 samples, Effort=2638, Loss=0.0065
+  Client 5: 1 epochs, 2887 samples, Effort=2887, Loss=0.0068
+  Client 3: 1 epochs, 2356 samples, Effort=2356, Loss=0.0069
+  Client 6: 1 epochs, 2254 samples, Effort=2254, Loss=0.0070
+  Client 9: 1 epochs, 2045 samples, Effort=2045, Loss=0.0067
+  Client 8: 1 epochs, 2354 samples, Effort=2354, Loss=0.0066
+Round 28 │ MSE=0.0015 │ PSNR=28.37 dB │ Avg Loss=0.0067 │ Loss Std=0.0002
+         │ Participation Gini=0.101 │ Effort Gini=0.101
+--------------------------------------------------------------------------------
+
+Round 29
+Selected clients: [(1, 1), (6, 1), (9, 1), (4, 1), (7, 1), (3, 1)]
+  Client 1: 1 epochs, 2902 samples, Effort=2902, Loss=0.0064
+  Client 6: 1 epochs, 2254 samples, Effort=2254, Loss=0.0065
+  Client 9: 1 epochs, 2045 samples, Effort=2045, Loss=0.0064
+  Client 4: 1 epochs, 2221 samples, Effort=2221, Loss=0.0065
+  Client 7: 1 epochs, 2888 samples, Effort=2888, Loss=0.0063
+  Client 3: 1 epochs, 2356 samples, Effort=2356, Loss=0.0067
+Round 29 │ MSE=0.0014 │ PSNR=28.60 dB │ Avg Loss=0.0065 │ Loss Std=0.0001
+         │ Participation Gini=0.092 │ Effort Gini=0.091
+--------------------------------------------------------------------------------
+
+Round 30
+Selected clients: [(4, 1), (7, 1), (9, 1), (2, 1), (1, 1), (5, 1)]
+  Client 4: 1 epochs, 2221 samples, Effort=2221, Loss=0.0062
+  Client 7: 1 epochs, 2888 samples, Effort=2888, Loss=0.0063
+  Client 9: 1 epochs, 2045 samples, Effort=2045, Loss=0.0059
+  Client 2: 1 epochs, 2452 samples, Effort=2452, Loss=0.0064
+  Client 1: 1 epochs, 2902 samples, Effort=2902, Loss=0.0061
+  Client 5: 1 epochs, 2887 samples, Effort=2887, Loss=0.0061
+Round 30 │ MSE=0.0013 │ PSNR=28.85 dB │ Avg Loss=0.0062 │ Loss Std=0.0002
+         │ Participation Gini=0.076 │ Effort Gini=0.079
+--------------------------------------------------------------------------------
+
+Round 31
+Selected clients: [(5, 1), (3, 1), (4, 1), (2, 1), (10, 1), (8, 1)]
+  Client 5: 1 epochs, 2887 samples, Effort=2887, Loss=0.0063
+  Client 3: 1 epochs, 2356 samples, Effort=2356, Loss=0.0063
+  Client 4: 1 epochs, 2221 samples, Effort=2221, Loss=0.0063
+  Client 2: 1 epochs, 2452 samples, Effort=2452, Loss=0.0061
+  Client 10: 1 epochs, 2638 samples, Effort=2638, Loss=0.0063
+  Client 8: 1 epochs, 2354 samples, Effort=2354, Loss=0.0061
+Round 31 │ MSE=0.0013 │ PSNR=28.98 dB │ Avg Loss=0.0062 │ Loss Std=0.0001
+         │ Participation Gini=0.081 │ Effort Gini=0.084
+--------------------------------------------------------------------------------
+
+Round 32
+Selected clients: [(4, 1), (3, 1), (7, 1), (5, 1), (6, 1), (10, 1)]
+  Client 4: 1 epochs, 2221 samples, Effort=2221, Loss=0.0061
+  Client 3: 1 epochs, 2356 samples, Effort=2356, Loss=0.0062
+  Client 7: 1 epochs, 2888 samples, Effort=2888, Loss=0.0059
+  Client 5: 1 epochs, 2887 samples, Effort=2887, Loss=0.0060
+  Client 6: 1 epochs, 2254 samples, Effort=2254, Loss=0.0062
+  Client 10: 1 epochs, 2638 samples, Effort=2638, Loss=0.0060
+Round 32 │ MSE=0.0012 │ PSNR=29.15 dB │ Avg Loss=0.0061 │ Loss Std=0.0001
+         │ Participation Gini=0.082 │ Effort Gini=0.090
+--------------------------------------------------------------------------------
+
+Round 33
+Selected clients: [(3, 1), (1, 1), (9, 1), (4, 1), (2, 1), (5, 1)]
+  Client 3: 1 epochs, 2356 samples, Effort=2356, Loss=0.0061
+  Client 1: 1 epochs, 2902 samples, Effort=2902, Loss=0.0058
+  Client 9: 1 epochs, 2045 samples, Effort=2045, Loss=0.0059
+  Client 4: 1 epochs, 2221 samples, Effort=2221, Loss=0.0059
+  Client 2: 1 epochs, 2452 samples, Effort=2452, Loss=0.0060
+  Client 5: 1 epochs, 2887 samples, Effort=2887, Loss=0.0058
+Round 33 │ MSE=0.0012 │ PSNR=29.36 dB │ Avg Loss=0.0059 │ Loss Std=0.0001
+         │ Participation Gini=0.077 │ Effort Gini=0.084
+--------------------------------------------------------------------------------
+
+Round 34
+Selected clients: [(6, 1), (7, 1), (4, 1), (8, 1), (5, 1), (9, 1)]
+  Client 6: 1 epochs, 2254 samples, Effort=2254, Loss=0.0061
+  Client 7: 1 epochs, 2888 samples, Effort=2888, Loss=0.0058
+  Client 4: 1 epochs, 2221 samples, Effort=2221, Loss=0.0060
+  Client 8: 1 epochs, 2354 samples, Effort=2354, Loss=0.0057
+  Client 5: 1 epochs, 2887 samples, Effort=2887, Loss=0.0057
+  Client 9: 1 epochs, 2045 samples, Effort=2045, Loss=0.0059
+Round 34 │ MSE=0.0011 │ PSNR=29.43 dB │ Avg Loss=0.0059 │ Loss Std=0.0001
+         │ Participation Gini=0.075 │ Effort Gini=0.082
+--------------------------------------------------------------------------------
+
+Round 35
+Selected clients: [(10, 1), (4, 1), (8, 1), (9, 1), (3, 1), (7, 1)]
+  Client 10: 1 epochs, 2638 samples, Effort=2638, Loss=0.0056
+  Client 4: 1 epochs, 2221 samples, Effort=2221, Loss=0.0057
+  Client 8: 1 epochs, 2354 samples, Effort=2354, Loss=0.0056
+  Client 9: 1 epochs, 2045 samples, Effort=2045, Loss=0.0058
+  Client 3: 1 epochs, 2356 samples, Effort=2356, Loss=0.0057
+  Client 7: 1 epochs, 2888 samples, Effort=2888, Loss=0.0055
+Round 35 │ MSE=0.0011 │ PSNR=29.57 dB │ Avg Loss=0.0057 │ Loss Std=0.0001
+         │ Participation Gini=0.078 │ Effort Gini=0.082
+--------------------------------------------------------------------------------
+
+Training completed!
+
+Final Fairness Analysis:
+Participation distribution: [15, 18, 26, 21, 22, 21, 19, 24, 21, 23]
+Total effort distribution: [43530, 44136, 61256, 46641, 63514, 47334, 54872, 56496, 42945, 60674]
+Participation Gini coefficient: 0.078
+Effort Gini coefficient: 0.082
+Generating final reconstruction comparison...
+(base) simurgh@simurgh SemComSim % python fed_semcom_v4_iot_fair.py 
+Using device: mps
+FedLoL IoT v11 - Client Selection Strategy: BASELINE
+Configuration: 10 clients, 6 selected per round, 35 rounds
+Using Tiny ImageNet dataset
+Model size: 17.53 MB
+Total parameters: 4,596,227
+
+Client Data Distribution:
+  Client 1: 2902 samples
+  Client 2: 2452 samples
+  Client 3: 2356 samples
+  Client 4: 2221 samples
+  Client 5: 2887 samples
+  Client 6: 2254 samples
+  Client 7: 2888 samples
+  Client 8: 2354 samples
+  Client 9: 2045 samples
+  Client 10: 2638 samples
+
+Starting federated training for 35 rounds...
+================================================================================
+
+Round 01
+Selected clients: [(1, 3), (2, 3), (3, 3), (4, 3), (5, 3), (6, 3), (7, 3), (8, 3), (9, 3), (10, 3)]
+  Client 1: 3 epochs, 2902 samples, Effort=8706, Loss=0.0332
+  Client 2: 3 epochs, 2452 samples, Effort=7356, Loss=0.0364
+  Client 3: 3 epochs, 2356 samples, Effort=7068, Loss=0.0371
+  Client 4: 3 epochs, 2221 samples, Effort=6663, Loss=0.0371
+  Client 5: 3 epochs, 2887 samples, Effort=8661, Loss=0.0331
+  Client 6: 3 epochs, 2254 samples, Effort=6762, Loss=0.0373
+  Client 7: 3 epochs, 2888 samples, Effort=8664, Loss=0.0331
+  Client 8: 3 epochs, 2354 samples, Effort=7062, Loss=0.0360
+  Client 9: 3 epochs, 2045 samples, Effort=6135, Loss=0.0377
+  Client 10: 3 epochs, 2638 samples, Effort=7914, Loss=0.0344
+Round 01 │ MSE=0.0097 │ PSNR=20.12 dB │ Avg Loss=0.0355 │ Loss Std=0.0018
+         │ Participation Gini=0.000 │ Effort Gini=0.066
+--------------------------------------------------------------------------------
+
+Round 02
+Selected clients: [(1, 3), (2, 3), (3, 3), (4, 3), (5, 3), (6, 3), (7, 3), (8, 3), (9, 3), (10, 3)]
+  Client 1: 3 epochs, 2902 samples, Effort=8706, Loss=0.0180
+  Client 2: 3 epochs, 2452 samples, Effort=7356, Loss=0.0185
+  Client 3: 3 epochs, 2356 samples, Effort=7068, Loss=0.0182
+  Client 4: 3 epochs, 2221 samples, Effort=6663, Loss=0.0184
+  Client 5: 3 epochs, 2887 samples, Effort=8661, Loss=0.0180
+  Client 6: 3 epochs, 2254 samples, Effort=6762, Loss=0.0180
+  Client 7: 3 epochs, 2888 samples, Effort=8664, Loss=0.0174
+  Client 8: 3 epochs, 2354 samples, Effort=7062, Loss=0.0182
+  Client 9: 3 epochs, 2045 samples, Effort=6135, Loss=0.0178
+  Client 10: 3 epochs, 2638 samples, Effort=7914, Loss=0.0172
+Round 02 │ MSE=0.0066 │ PSNR=21.82 dB │ Avg Loss=0.0180 │ Loss Std=0.0004
+         │ Participation Gini=0.000 │ Effort Gini=0.066
+--------------------------------------------------------------------------------
+
+Round 03
+Selected clients: [(1, 3), (2, 3), (3, 3), (4, 3), (5, 3), (6, 3), (7, 3), (8, 3), (9, 3), (10, 3)]
+  Client 1: 3 epochs, 2902 samples, Effort=8706, Loss=0.0144
+  Client 2: 3 epochs, 2452 samples, Effort=7356, Loss=0.0151
+  Client 3: 3 epochs, 2356 samples, Effort=7068, Loss=0.0150
+  Client 4: 3 epochs, 2221 samples, Effort=6663, Loss=0.0145
+  Client 5: 3 epochs, 2887 samples, Effort=8661, Loss=0.0147
+  Client 6: 3 epochs, 2254 samples, Effort=6762, Loss=0.0149
+  Client 7: 3 epochs, 2888 samples, Effort=8664, Loss=0.0141
+  Client 8: 3 epochs, 2354 samples, Effort=7062, Loss=0.0149
+  Client 9: 3 epochs, 2045 samples, Effort=6135, Loss=0.0144
+  Client 10: 3 epochs, 2638 samples, Effort=7914, Loss=0.0140
+Round 03 │ MSE=0.0050 │ PSNR=23.05 dB │ Avg Loss=0.0146 │ Loss Std=0.0004
+         │ Participation Gini=0.000 │ Effort Gini=0.066
+--------------------------------------------------------------------------------
+
+Round 04
+Selected clients: [(1, 3), (2, 3), (3, 3), (4, 3), (5, 3), (6, 3), (7, 3), (8, 3), (9, 3), (10, 3)]
+  Client 1: 3 epochs, 2902 samples, Effort=8706, Loss=0.0123
+  Client 2: 3 epochs, 2452 samples, Effort=7356, Loss=0.0126
+  Client 3: 3 epochs, 2356 samples, Effort=7068, Loss=0.0127
+  Client 4: 3 epochs, 2221 samples, Effort=6663, Loss=0.0123
+  Client 5: 3 epochs, 2887 samples, Effort=8661, Loss=0.0123
+  Client 6: 3 epochs, 2254 samples, Effort=6762, Loss=0.0126
+  Client 7: 3 epochs, 2888 samples, Effort=8664, Loss=0.0120
+  Client 8: 3 epochs, 2354 samples, Effort=7062, Loss=0.0125
+  Client 9: 3 epochs, 2045 samples, Effort=6135, Loss=0.0121
+  Client 10: 3 epochs, 2638 samples, Effort=7914, Loss=0.0120
+Round 04 │ MSE=0.0037 │ PSNR=24.36 dB │ Avg Loss=0.0124 │ Loss Std=0.0003
+         │ Participation Gini=0.000 │ Effort Gini=0.066
+--------------------------------------------------------------------------------
+
+Round 05
+Selected clients: [(1, 3), (2, 3), (3, 3), (4, 3), (5, 3), (6, 3), (7, 3), (8, 3), (9, 3), (10, 3)]
+  Client 1: 3 epochs, 2902 samples, Effort=8706, Loss=0.0103
+  Client 2: 3 epochs, 2452 samples, Effort=7356, Loss=0.0107
+  Client 3: 3 epochs, 2356 samples, Effort=7068, Loss=0.0108
+  Client 4: 3 epochs, 2221 samples, Effort=6663, Loss=0.0106
+  Client 5: 3 epochs, 2887 samples, Effort=8661, Loss=0.0104
+  Client 6: 3 epochs, 2254 samples, Effort=6762, Loss=0.0107
+  Client 7: 3 epochs, 2888 samples, Effort=8664, Loss=0.0101
+  Client 8: 3 epochs, 2354 samples, Effort=7062, Loss=0.0106
+  Client 9: 3 epochs, 2045 samples, Effort=6135, Loss=0.0104
+  Client 10: 3 epochs, 2638 samples, Effort=7914, Loss=0.0100
+Round 05 │ MSE=0.0027 │ PSNR=25.62 dB │ Avg Loss=0.0105 │ Loss Std=0.0003
+         │ Participation Gini=0.000 │ Effort Gini=0.066
+--------------------------------------------------------------------------------
+
+Round 06
+Selected clients: [(1, 3), (2, 3), (3, 3), (4, 3), (5, 3), (6, 3), (7, 3), (8, 3), (9, 3), (10, 3)]
+  Client 1: 3 epochs, 2902 samples, Effort=8706, Loss=0.0087
+  Client 2: 3 epochs, 2452 samples, Effort=7356, Loss=0.0092
+  Client 3: 3 epochs, 2356 samples, Effort=7068, Loss=0.0092
+  Client 4: 3 epochs, 2221 samples, Effort=6663, Loss=0.0091
+  Client 5: 3 epochs, 2887 samples, Effort=8661, Loss=0.0088
+  Client 6: 3 epochs, 2254 samples, Effort=6762, Loss=0.0089
+  Client 7: 3 epochs, 2888 samples, Effort=8664, Loss=0.0085
+  Client 8: 3 epochs, 2354 samples, Effort=7062, Loss=0.0088
+  Client 9: 3 epochs, 2045 samples, Effort=6135, Loss=0.0087
+  Client 10: 3 epochs, 2638 samples, Effort=7914, Loss=0.0087
+Round 06 │ MSE=0.0021 │ PSNR=26.79 dB │ Avg Loss=0.0089 │ Loss Std=0.0002
+         │ Participation Gini=0.000 │ Effort Gini=0.066
+--------------------------------------------------------------------------------
+
+Round 07
+Selected clients: [(1, 3), (2, 3), (3, 3), (4, 3), (5, 3), (6, 3), (7, 3), (8, 3), (9, 3), (10, 3)]
+  Client 1: 3 epochs, 2902 samples, Effort=8706, Loss=0.0076
+  Client 2: 3 epochs, 2452 samples, Effort=7356, Loss=0.0080
+  Client 3: 3 epochs, 2356 samples, Effort=7068, Loss=0.0080
+  Client 4: 3 epochs, 2221 samples, Effort=6663, Loss=0.0078
+  Client 5: 3 epochs, 2887 samples, Effort=8661, Loss=0.0076
+  Client 6: 3 epochs, 2254 samples, Effort=6762, Loss=0.0080
+  Client 7: 3 epochs, 2888 samples, Effort=8664, Loss=0.0074
+  Client 8: 3 epochs, 2354 samples, Effort=7062, Loss=0.0077
+  Client 9: 3 epochs, 2045 samples, Effort=6135, Loss=0.0075
+  Client 10: 3 epochs, 2638 samples, Effort=7914, Loss=0.0076
+Round 07 │ MSE=0.0017 │ PSNR=27.72 dB │ Avg Loss=0.0077 │ Loss Std=0.0002
+         │ Participation Gini=0.000 │ Effort Gini=0.066
+--------------------------------------------------------------------------------
+
+Round 08
+Selected clients: [(1, 3), (2, 3), (3, 3), (4, 3), (5, 3), (6, 3), (7, 3), (8, 3), (9, 3), (10, 3)]
+  Client 1: 3 epochs, 2902 samples, Effort=8706, Loss=0.0067
+  Client 2: 3 epochs, 2452 samples, Effort=7356, Loss=0.0071
+  Client 3: 3 epochs, 2356 samples, Effort=7068, Loss=0.0070
+  Client 4: 3 epochs, 2221 samples, Effort=6663, Loss=0.0070
+  Client 5: 3 epochs, 2887 samples, Effort=8661, Loss=0.0068
+  Client 6: 3 epochs, 2254 samples, Effort=6762, Loss=0.0071
+  Client 7: 3 epochs, 2888 samples, Effort=8664, Loss=0.0067
+  Client 8: 3 epochs, 2354 samples, Effort=7062, Loss=0.0066
+  Client 9: 3 epochs, 2045 samples, Effort=6135, Loss=0.0068
+  Client 10: 3 epochs, 2638 samples, Effort=7914, Loss=0.0068
+Round 08 │ MSE=0.0014 │ PSNR=28.50 dB │ Avg Loss=0.0069 │ Loss Std=0.0002
+         │ Participation Gini=0.000 │ Effort Gini=0.066
+--------------------------------------------------------------------------------
+
+Round 09
+Selected clients: [(1, 3), (2, 3), (3, 3), (4, 3), (5, 3), (6, 3), (7, 3), (8, 3), (9, 3), (10, 3)]
+  Client 1: 3 epochs, 2902 samples, Effort=8706, Loss=0.0062
+  Client 2: 3 epochs, 2452 samples, Effort=7356, Loss=0.0065
+  Client 3: 3 epochs, 2356 samples, Effort=7068, Loss=0.0064
+  Client 4: 3 epochs, 2221 samples, Effort=6663, Loss=0.0063
+  Client 5: 3 epochs, 2887 samples, Effort=8661, Loss=0.0062
+  Client 6: 3 epochs, 2254 samples, Effort=6762, Loss=0.0064
+  Client 7: 3 epochs, 2888 samples, Effort=8664, Loss=0.0061
+  Client 8: 3 epochs, 2354 samples, Effort=7062, Loss=0.0062
+  Client 9: 3 epochs, 2045 samples, Effort=6135, Loss=0.0061
+  Client 10: 3 epochs, 2638 samples, Effort=7914, Loss=0.0062
+Round 09 │ MSE=0.0012 │ PSNR=29.16 dB │ Avg Loss=0.0062 │ Loss Std=0.0001
+         │ Participation Gini=0.000 │ Effort Gini=0.066
+--------------------------------------------------------------------------------
+
+Round 10
+Selected clients: [(1, 3), (2, 3), (3, 3), (4, 3), (5, 3), (6, 3), (7, 3), (8, 3), (9, 3), (10, 3)]
+  Client 1: 3 epochs, 2902 samples, Effort=8706, Loss=0.0057
+  Client 2: 3 epochs, 2452 samples, Effort=7356, Loss=0.0059
+  Client 3: 3 epochs, 2356 samples, Effort=7068, Loss=0.0057
+  Client 4: 3 epochs, 2221 samples, Effort=6663, Loss=0.0058
+  Client 5: 3 epochs, 2887 samples, Effort=8661, Loss=0.0056
+  Client 6: 3 epochs, 2254 samples, Effort=6762, Loss=0.0058
+  Client 7: 3 epochs, 2888 samples, Effort=8664, Loss=0.0055
+  Client 8: 3 epochs, 2354 samples, Effort=7062, Loss=0.0056
+  Client 9: 3 epochs, 2045 samples, Effort=6135, Loss=0.0054
+  Client 10: 3 epochs, 2638 samples, Effort=7914, Loss=0.0057
+Round 10 │ MSE=0.0011 │ PSNR=29.66 dB │ Avg Loss=0.0057 │ Loss Std=0.0001
+         │ Participation Gini=0.000 │ Effort Gini=0.066
+--------------------------------------------------------------------------------
+
+Round 11
+Selected clients: [(1, 3), (2, 3), (3, 3), (4, 3), (5, 3), (6, 3), (7, 3), (8, 3), (9, 3), (10, 3)]
+  Client 1: 3 epochs, 2902 samples, Effort=8706, Loss=0.0052
+  Client 2: 3 epochs, 2452 samples, Effort=7356, Loss=0.0054
+  Client 3: 3 epochs, 2356 samples, Effort=7068, Loss=0.0054
+  Client 4: 3 epochs, 2221 samples, Effort=6663, Loss=0.0054
+  Client 5: 3 epochs, 2887 samples, Effort=8661, Loss=0.0052
+  Client 6: 3 epochs, 2254 samples, Effort=6762, Loss=0.0053
+  Client 7: 3 epochs, 2888 samples, Effort=8664, Loss=0.0051
+  Client 8: 3 epochs, 2354 samples, Effort=7062, Loss=0.0051
+  Client 9: 3 epochs, 2045 samples, Effort=6135, Loss=0.0052
+  Client 10: 3 epochs, 2638 samples, Effort=7914, Loss=0.0053
+Round 11 │ MSE=0.0010 │ PSNR=30.00 dB │ Avg Loss=0.0053 │ Loss Std=0.0001
+         │ Participation Gini=0.000 │ Effort Gini=0.066
+--------------------------------------------------------------------------------
+
+Round 12
+Selected clients: [(1, 3), (2, 3), (3, 3), (4, 3), (5, 3), (6, 3), (7, 3), (8, 3), (9, 3), (10, 3)]
+  Client 1: 3 epochs, 2902 samples, Effort=8706, Loss=0.0049
+  Client 2: 3 epochs, 2452 samples, Effort=7356, Loss=0.0051
+  Client 3: 3 epochs, 2356 samples, Effort=7068, Loss=0.0050
+  Client 4: 3 epochs, 2221 samples, Effort=6663, Loss=0.0050
+  Client 5: 3 epochs, 2887 samples, Effort=8661, Loss=0.0050
+  Client 6: 3 epochs, 2254 samples, Effort=6762, Loss=0.0051
+  Client 7: 3 epochs, 2888 samples, Effort=8664, Loss=0.0048
+  Client 8: 3 epochs, 2354 samples, Effort=7062, Loss=0.0050
+  Client 9: 3 epochs, 2045 samples, Effort=6135, Loss=0.0049
+  Client 10: 3 epochs, 2638 samples, Effort=7914, Loss=0.0050
+Round 12 │ MSE=0.0009 │ PSNR=30.25 dB │ Avg Loss=0.0050 │ Loss Std=0.0001
+         │ Participation Gini=0.000 │ Effort Gini=0.066
+--------------------------------------------------------------------------------
+
+Round 13
+Selected clients: [(1, 3), (2, 3), (3, 3), (4, 3), (5, 3), (6, 3), (7, 3), (8, 3), (9, 3), (10, 3)]
+  Client 1: 3 epochs, 2902 samples, Effort=8706, Loss=0.0047
+  Client 2: 3 epochs, 2452 samples, Effort=7356, Loss=0.0049
+  Client 3: 3 epochs, 2356 samples, Effort=7068, Loss=0.0048
+  Client 4: 3 epochs, 2221 samples, Effort=6663, Loss=0.0048
+  Client 5: 3 epochs, 2887 samples, Effort=8661, Loss=0.0048
+  Client 6: 3 epochs, 2254 samples, Effort=6762, Loss=0.0049
+  Client 7: 3 epochs, 2888 samples, Effort=8664, Loss=0.0047
+  Client 8: 3 epochs, 2354 samples, Effort=7062, Loss=0.0047
+  Client 9: 3 epochs, 2045 samples, Effort=6135, Loss=0.0047
+  Client 10: 3 epochs, 2638 samples, Effort=7914, Loss=0.0048
+Round 13 │ MSE=0.0009 │ PSNR=30.40 dB │ Avg Loss=0.0048 │ Loss Std=0.0001
+         │ Participation Gini=0.000 │ Effort Gini=0.066
+--------------------------------------------------------------------------------
+
+Round 14
+Selected clients: [(1, 3), (2, 3), (3, 3), (4, 3), (5, 3), (6, 3), (7, 3), (8, 3), (9, 3), (10, 3)]
+  Client 1: 3 epochs, 2902 samples, Effort=8706, Loss=0.0046
+  Client 2: 3 epochs, 2452 samples, Effort=7356, Loss=0.0049
+  Client 3: 3 epochs, 2356 samples, Effort=7068, Loss=0.0048
+  Client 4: 3 epochs, 2221 samples, Effort=6663, Loss=0.0047
+  Client 5: 3 epochs, 2887 samples, Effort=8661, Loss=0.0046
+  Client 6: 3 epochs, 2254 samples, Effort=6762, Loss=0.0048
+  Client 7: 3 epochs, 2888 samples, Effort=8664, Loss=0.0046
+  Client 8: 3 epochs, 2354 samples, Effort=7062, Loss=0.0046
+  Client 9: 3 epochs, 2045 samples, Effort=6135, Loss=0.0045
+  Client 10: 3 epochs, 2638 samples, Effort=7914, Loss=0.0047
+Round 14 │ MSE=0.0009 │ PSNR=30.50 dB │ Avg Loss=0.0047 │ Loss Std=0.0001
+         │ Participation Gini=0.000 │ Effort Gini=0.066
+--------------------------------------------------------------------------------
+
+Round 15
+Selected clients: [(1, 3), (2, 3), (3, 3), (4, 3), (5, 3), (6, 3), (7, 3), (8, 3), (9, 3), (10, 3)]
+  Client 1: 3 epochs, 2902 samples, Effort=8706, Loss=0.0045
+  Client 2: 3 epochs, 2452 samples, Effort=7356, Loss=0.0047
+  Client 3: 3 epochs, 2356 samples, Effort=7068, Loss=0.0046
+  Client 4: 3 epochs, 2221 samples, Effort=6663, Loss=0.0046
+  Client 5: 3 epochs, 2887 samples, Effort=8661, Loss=0.0045
+  Client 6: 3 epochs, 2254 samples, Effort=6762, Loss=0.0048
+  Client 7: 3 epochs, 2888 samples, Effort=8664, Loss=0.0045
+  Client 8: 3 epochs, 2354 samples, Effort=7062, Loss=0.0045
+  Client 9: 3 epochs, 2045 samples, Effort=6135, Loss=0.0046
+  Client 10: 3 epochs, 2638 samples, Effort=7914, Loss=0.0047
+Round 15 │ MSE=0.0009 │ PSNR=30.62 dB │ Avg Loss=0.0046 │ Loss Std=0.0001
+         │ Participation Gini=0.000 │ Effort Gini=0.066
+--------------------------------------------------------------------------------
+
+Round 16
+Selected clients: [(1, 3), (2, 3), (3, 3), (4, 3), (5, 3), (6, 3), (7, 3), (8, 3), (9, 3), (10, 3)]
+  Client 1: 3 epochs, 2902 samples, Effort=8706, Loss=0.0045
+  Client 2: 3 epochs, 2452 samples, Effort=7356, Loss=0.0047
+  Client 3: 3 epochs, 2356 samples, Effort=7068, Loss=0.0046
+  Client 4: 3 epochs, 2221 samples, Effort=6663, Loss=0.0046
+  Client 5: 3 epochs, 2887 samples, Effort=8661, Loss=0.0045
+  Client 6: 3 epochs, 2254 samples, Effort=6762, Loss=0.0046
+  Client 7: 3 epochs, 2888 samples, Effort=8664, Loss=0.0044
+  Client 8: 3 epochs, 2354 samples, Effort=7062, Loss=0.0043
+  Client 9: 3 epochs, 2045 samples, Effort=6135, Loss=0.0044
+  Client 10: 3 epochs, 2638 samples, Effort=7914, Loss=0.0046
+Round 16 │ MSE=0.0009 │ PSNR=30.67 dB │ Avg Loss=0.0045 │ Loss Std=0.0001
+         │ Participation Gini=0.000 │ Effort Gini=0.066
+--------------------------------------------------------------------------------
+
+Round 17
+Selected clients: [(1, 3), (2, 3), (3, 3), (4, 3), (5, 3), (6, 3), (7, 3), (8, 3), (9, 3), (10, 3)]
+  Client 1: 3 epochs, 2902 samples, Effort=8706, Loss=0.0045
+  Client 2: 3 epochs, 2452 samples, Effort=7356, Loss=0.0046
+  Client 3: 3 epochs, 2356 samples, Effort=7068, Loss=0.0045
+  Client 4: 3 epochs, 2221 samples, Effort=6663, Loss=0.0046
+  Client 5: 3 epochs, 2887 samples, Effort=8661, Loss=0.0045
+  Client 6: 3 epochs, 2254 samples, Effort=6762, Loss=0.0044
+  Client 7: 3 epochs, 2888 samples, Effort=8664, Loss=0.0043
+  Client 8: 3 epochs, 2354 samples, Effort=7062, Loss=0.0043
+  Client 9: 3 epochs, 2045 samples, Effort=6135, Loss=0.0044
+  Client 10: 3 epochs, 2638 samples, Effort=7914, Loss=0.0045
+Round 17 │ MSE=0.0008 │ PSNR=30.77 dB │ Avg Loss=0.0045 │ Loss Std=0.0001
+         │ Participation Gini=0.000 │ Effort Gini=0.066
+--------------------------------------------------------------------------------
+
+Round 18
+Selected clients: [(1, 3), (2, 3), (3, 3), (4, 3), (5, 3), (6, 3), (7, 3), (8, 3), (9, 3), (10, 3)]
+  Client 1: 3 epochs, 2902 samples, Effort=8706, Loss=0.0043
+  Client 2: 3 epochs, 2452 samples, Effort=7356, Loss=0.0045
+  Client 3: 3 epochs, 2356 samples, Effort=7068, Loss=0.0045
+  Client 4: 3 epochs, 2221 samples, Effort=6663, Loss=0.0044
+  Client 5: 3 epochs, 2887 samples, Effort=8661, Loss=0.0044
+  Client 6: 3 epochs, 2254 samples, Effort=6762, Loss=0.0045
+  Client 7: 3 epochs, 2888 samples, Effort=8664, Loss=0.0043
+  Client 8: 3 epochs, 2354 samples, Effort=7062, Loss=0.0044
+  Client 9: 3 epochs, 2045 samples, Effort=6135, Loss=0.0044
+  Client 10: 3 epochs, 2638 samples, Effort=7914, Loss=0.0045
+Round 18 │ MSE=0.0008 │ PSNR=30.83 dB │ Avg Loss=0.0044 │ Loss Std=0.0001
+         │ Participation Gini=0.000 │ Effort Gini=0.066
+--------------------------------------------------------------------------------
+
+Round 19
+Selected clients: [(1, 3), (2, 3), (3, 3), (4, 3), (5, 3), (6, 3), (7, 3), (8, 3), (9, 3), (10, 3)]
+  Client 1: 3 epochs, 2902 samples, Effort=8706, Loss=0.0043
+  Client 2: 3 epochs, 2452 samples, Effort=7356, Loss=0.0044
+  Client 3: 3 epochs, 2356 samples, Effort=7068, Loss=0.0044
+  Client 4: 3 epochs, 2221 samples, Effort=6663, Loss=0.0043
+  Client 5: 3 epochs, 2887 samples, Effort=8661, Loss=0.0043
+  Client 6: 3 epochs, 2254 samples, Effort=6762, Loss=0.0044
+  Client 7: 3 epochs, 2888 samples, Effort=8664, Loss=0.0042
+  Client 8: 3 epochs, 2354 samples, Effort=7062, Loss=0.0042
+  Client 9: 3 epochs, 2045 samples, Effort=6135, Loss=0.0042
+  Client 10: 3 epochs, 2638 samples, Effort=7914, Loss=0.0044
+Round 19 │ MSE=0.0008 │ PSNR=30.88 dB │ Avg Loss=0.0043 │ Loss Std=0.0001
+         │ Participation Gini=0.000 │ Effort Gini=0.066
+--------------------------------------------------------------------------------
+
+Round 20
+Selected clients: [(1, 3), (2, 3), (3, 3), (4, 3), (5, 3), (6, 3), (7, 3), (8, 3), (9, 3), (10, 3)]
+  Client 1: 3 epochs, 2902 samples, Effort=8706, Loss=0.0043
+  Client 2: 3 epochs, 2452 samples, Effort=7356, Loss=0.0044
+  Client 3: 3 epochs, 2356 samples, Effort=7068, Loss=0.0042
+  Client 4: 3 epochs, 2221 samples, Effort=6663, Loss=0.0043
+  Client 5: 3 epochs, 2887 samples, Effort=8661, Loss=0.0042
+  Client 6: 3 epochs, 2254 samples, Effort=6762, Loss=0.0043
+  Client 7: 3 epochs, 2888 samples, Effort=8664, Loss=0.0041
+  Client 8: 3 epochs, 2354 samples, Effort=7062, Loss=0.0041
+  Client 9: 3 epochs, 2045 samples, Effort=6135, Loss=0.0041
+  Client 10: 3 epochs, 2638 samples, Effort=7914, Loss=0.0043
+Round 20 │ MSE=0.0008 │ PSNR=30.93 dB │ Avg Loss=0.0042 │ Loss Std=0.0001
+         │ Participation Gini=0.000 │ Effort Gini=0.066
+--------------------------------------------------------------------------------
+
+Round 21
+Selected clients: [(1, 3), (2, 3), (3, 3), (4, 3), (5, 3), (6, 3), (7, 3), (8, 3), (9, 3), (10, 3)]
+  Client 1: 3 epochs, 2902 samples, Effort=8706, Loss=0.0042
+  Client 2: 3 epochs, 2452 samples, Effort=7356, Loss=0.0044
+  Client 3: 3 epochs, 2356 samples, Effort=7068, Loss=0.0043
+  Client 4: 3 epochs, 2221 samples, Effort=6663, Loss=0.0043
+  Client 5: 3 epochs, 2887 samples, Effort=8661, Loss=0.0042
+  Client 6: 3 epochs, 2254 samples, Effort=6762, Loss=0.0044
+  Client 7: 3 epochs, 2888 samples, Effort=8664, Loss=0.0041
+  Client 8: 3 epochs, 2354 samples, Effort=7062, Loss=0.0041
+  Client 9: 3 epochs, 2045 samples, Effort=6135, Loss=0.0041
+  Client 10: 3 epochs, 2638 samples, Effort=7914, Loss=0.0043
+Round 21 │ MSE=0.0008 │ PSNR=30.99 dB │ Avg Loss=0.0042 │ Loss Std=0.0001
+         │ Participation Gini=0.000 │ Effort Gini=0.066
+--------------------------------------------------------------------------------
+
+Round 22
+Selected clients: [(1, 3), (2, 3), (3, 3), (4, 3), (5, 3), (6, 3), (7, 3), (8, 3), (9, 3), (10, 3)]
+  Client 1: 3 epochs, 2902 samples, Effort=8706, Loss=0.0042
+  Client 2: 3 epochs, 2452 samples, Effort=7356, Loss=0.0043
+  Client 3: 3 epochs, 2356 samples, Effort=7068, Loss=0.0043
+  Client 4: 3 epochs, 2221 samples, Effort=6663, Loss=0.0042
+  Client 5: 3 epochs, 2887 samples, Effort=8661, Loss=0.0041
+  Client 6: 3 epochs, 2254 samples, Effort=6762, Loss=0.0043
+  Client 7: 3 epochs, 2888 samples, Effort=8664, Loss=0.0041
+  Client 8: 3 epochs, 2354 samples, Effort=7062, Loss=0.0041
+  Client 9: 3 epochs, 2045 samples, Effort=6135, Loss=0.0041
+  Client 10: 3 epochs, 2638 samples, Effort=7914, Loss=0.0042
+Round 22 │ MSE=0.0008 │ PSNR=31.09 dB │ Avg Loss=0.0042 │ Loss Std=0.0001
+         │ Participation Gini=0.000 │ Effort Gini=0.066
+--------------------------------------------------------------------------------
+
+Round 23
+Selected clients: [(1, 3), (2, 3), (3, 3), (4, 3), (5, 3), (6, 3), (7, 3), (8, 3), (9, 3), (10, 3)]
+  Client 1: 3 epochs, 2902 samples, Effort=8706, Loss=0.0041
+  Client 2: 3 epochs, 2452 samples, Effort=7356, Loss=0.0042
+  Client 3: 3 epochs, 2356 samples, Effort=7068, Loss=0.0041
+  Client 4: 3 epochs, 2221 samples, Effort=6663, Loss=0.0041
+  Client 5: 3 epochs, 2887 samples, Effort=8661, Loss=0.0041
+  Client 6: 3 epochs, 2254 samples, Effort=6762, Loss=0.0042
+  Client 7: 3 epochs, 2888 samples, Effort=8664, Loss=0.0041
+  Client 8: 3 epochs, 2354 samples, Effort=7062, Loss=0.0040
+  Client 9: 3 epochs, 2045 samples, Effort=6135, Loss=0.0040
+  Client 10: 3 epochs, 2638 samples, Effort=7914, Loss=0.0041
+Round 23 │ MSE=0.0008 │ PSNR=31.11 dB │ Avg Loss=0.0041 │ Loss Std=0.0001
+         │ Participation Gini=0.000 │ Effort Gini=0.066
+--------------------------------------------------------------------------------
+
+Round 24
+Selected clients: [(1, 3), (2, 3), (3, 3), (4, 3), (5, 3), (6, 3), (7, 3), (8, 3), (9, 3), (10, 3)]
+  Client 1: 3 epochs, 2902 samples, Effort=8706, Loss=0.0041
+  Client 2: 3 epochs, 2452 samples, Effort=7356, Loss=0.0042
+  Client 3: 3 epochs, 2356 samples, Effort=7068, Loss=0.0041
+  Client 4: 3 epochs, 2221 samples, Effort=6663, Loss=0.0041
+  Client 5: 3 epochs, 2887 samples, Effort=8661, Loss=0.0041
+  Client 6: 3 epochs, 2254 samples, Effort=6762, Loss=0.0042
+  Client 7: 3 epochs, 2888 samples, Effort=8664, Loss=0.0040
+  Client 8: 3 epochs, 2354 samples, Effort=7062, Loss=0.0040
+  Client 9: 3 epochs, 2045 samples, Effort=6135, Loss=0.0040
+  Client 10: 3 epochs, 2638 samples, Effort=7914, Loss=0.0041
+Round 24 │ MSE=0.0008 │ PSNR=31.24 dB │ Avg Loss=0.0041 │ Loss Std=0.0001
+         │ Participation Gini=0.000 │ Effort Gini=0.066
+--------------------------------------------------------------------------------
+
+Round 25
+Selected clients: [(1, 3), (2, 3), (3, 3), (4, 3), (5, 3), (6, 3), (7, 3), (8, 3), (9, 3), (10, 3)]
+  Client 1: 3 epochs, 2902 samples, Effort=8706, Loss=0.0040
+  Client 2: 3 epochs, 2452 samples, Effort=7356, Loss=0.0042
+  Client 3: 3 epochs, 2356 samples, Effort=7068, Loss=0.0041
+  Client 4: 3 epochs, 2221 samples, Effort=6663, Loss=0.0041
+  Client 5: 3 epochs, 2887 samples, Effort=8661, Loss=0.0041
+  Client 6: 3 epochs, 2254 samples, Effort=6762, Loss=0.0042
+  Client 7: 3 epochs, 2888 samples, Effort=8664, Loss=0.0039
+  Client 8: 3 epochs, 2354 samples, Effort=7062, Loss=0.0040
+  Client 9: 3 epochs, 2045 samples, Effort=6135, Loss=0.0040
+  Client 10: 3 epochs, 2638 samples, Effort=7914, Loss=0.0041
+Round 25 │ MSE=0.0008 │ PSNR=31.25 dB │ Avg Loss=0.0041 │ Loss Std=0.0001
+         │ Participation Gini=0.000 │ Effort Gini=0.066
+--------------------------------------------------------------------------------
+
+Round 26
+Selected clients: [(1, 3), (2, 3), (3, 3), (4, 3), (5, 3), (6, 3), (7, 3), (8, 3), (9, 3), (10, 3)]
+  Client 1: 3 epochs, 2902 samples, Effort=8706, Loss=0.0040
+  Client 2: 3 epochs, 2452 samples, Effort=7356, Loss=0.0041
+  Client 3: 3 epochs, 2356 samples, Effort=7068, Loss=0.0040
+  Client 4: 3 epochs, 2221 samples, Effort=6663, Loss=0.0040
+  Client 5: 3 epochs, 2887 samples, Effort=8661, Loss=0.0040
+  Client 6: 3 epochs, 2254 samples, Effort=6762, Loss=0.0041
+  Client 7: 3 epochs, 2888 samples, Effort=8664, Loss=0.0039
+  Client 8: 3 epochs, 2354 samples, Effort=7062, Loss=0.0039
+  Client 9: 3 epochs, 2045 samples, Effort=6135, Loss=0.0039
+  Client 10: 3 epochs, 2638 samples, Effort=7914, Loss=0.0040
+Round 26 │ MSE=0.0007 │ PSNR=31.32 dB │ Avg Loss=0.0040 │ Loss Std=0.0001
+         │ Participation Gini=0.000 │ Effort Gini=0.066
+--------------------------------------------------------------------------------
+
+Round 27
+Selected clients: [(1, 3), (2, 3), (3, 3), (4, 3), (5, 3), (6, 3), (7, 3), (8, 3), (9, 3), (10, 3)]
+  Client 1: 3 epochs, 2902 samples, Effort=8706, Loss=0.0040
+  Client 2: 3 epochs, 2452 samples, Effort=7356, Loss=0.0041
+  Client 3: 3 epochs, 2356 samples, Effort=7068, Loss=0.0040
+  Client 4: 3 epochs, 2221 samples, Effort=6663, Loss=0.0039
+  Client 5: 3 epochs, 2887 samples, Effort=8661, Loss=0.0040
+  Client 6: 3 epochs, 2254 samples, Effort=6762, Loss=0.0040
+  Client 7: 3 epochs, 2888 samples, Effort=8664, Loss=0.0039
+  Client 8: 3 epochs, 2354 samples, Effort=7062, Loss=0.0039
+  Client 9: 3 epochs, 2045 samples, Effort=6135, Loss=0.0039
+  Client 10: 3 epochs, 2638 samples, Effort=7914, Loss=0.0039
+Round 27 │ MSE=0.0007 │ PSNR=31.33 dB │ Avg Loss=0.0040 │ Loss Std=0.0001
+         │ Participation Gini=0.000 │ Effort Gini=0.066
+--------------------------------------------------------------------------------
+
+Round 28
+Selected clients: [(1, 3), (2, 3), (3, 3), (4, 3), (5, 3), (6, 3), (7, 3), (8, 3), (9, 3), (10, 3)]
+  Client 1: 3 epochs, 2902 samples, Effort=8706, Loss=0.0039
+  Client 2: 3 epochs, 2452 samples, Effort=7356, Loss=0.0041
+  Client 3: 3 epochs, 2356 samples, Effort=7068, Loss=0.0039
+  Client 4: 3 epochs, 2221 samples, Effort=6663, Loss=0.0039
+  Client 5: 3 epochs, 2887 samples, Effort=8661, Loss=0.0040
+  Client 6: 3 epochs, 2254 samples, Effort=6762, Loss=0.0041
+  Client 7: 3 epochs, 2888 samples, Effort=8664, Loss=0.0039
+  Client 8: 3 epochs, 2354 samples, Effort=7062, Loss=0.0039
+  Client 9: 3 epochs, 2045 samples, Effort=6135, Loss=0.0038
+  Client 10: 3 epochs, 2638 samples, Effort=7914, Loss=0.0040
+Round 28 │ MSE=0.0007 │ PSNR=31.42 dB │ Avg Loss=0.0039 │ Loss Std=0.0001
+         │ Participation Gini=0.000 │ Effort Gini=0.066
+--------------------------------------------------------------------------------
+
+Round 29
+Selected clients: [(1, 3), (2, 3), (3, 3), (4, 3), (5, 3), (6, 3), (7, 3), (8, 3), (9, 3), (10, 3)]
+  Client 1: 3 epochs, 2902 samples, Effort=8706, Loss=0.0039
+  Client 2: 3 epochs, 2452 samples, Effort=7356, Loss=0.0041
+  Client 3: 3 epochs, 2356 samples, Effort=7068, Loss=0.0039
+  Client 4: 3 epochs, 2221 samples, Effort=6663, Loss=0.0040
+  Client 5: 3 epochs, 2887 samples, Effort=8661, Loss=0.0039
+  Client 6: 3 epochs, 2254 samples, Effort=6762, Loss=0.0040
+  Client 7: 3 epochs, 2888 samples, Effort=8664, Loss=0.0039
+  Client 8: 3 epochs, 2354 samples, Effort=7062, Loss=0.0038
+  Client 9: 3 epochs, 2045 samples, Effort=6135, Loss=0.0039
+  Client 10: 3 epochs, 2638 samples, Effort=7914, Loss=0.0040
+Round 29 │ MSE=0.0007 │ PSNR=31.48 dB │ Avg Loss=0.0039 │ Loss Std=0.0001
+         │ Participation Gini=0.000 │ Effort Gini=0.066
+--------------------------------------------------------------------------------
+
+Round 30
+Selected clients: [(1, 3), (2, 3), (3, 3), (4, 3), (5, 3), (6, 3), (7, 3), (8, 3), (9, 3), (10, 3)]
+  Client 1: 3 epochs, 2902 samples, Effort=8706, Loss=0.0038
+  Client 2: 3 epochs, 2452 samples, Effort=7356, Loss=0.0040
+  Client 3: 3 epochs, 2356 samples, Effort=7068, Loss=0.0039
+  Client 4: 3 epochs, 2221 samples, Effort=6663, Loss=0.0040
+  Client 5: 3 epochs, 2887 samples, Effort=8661, Loss=0.0039
+  Client 6: 3 epochs, 2254 samples, Effort=6762, Loss=0.0040
+  Client 7: 3 epochs, 2888 samples, Effort=8664, Loss=0.0038
+  Client 8: 3 epochs, 2354 samples, Effort=7062, Loss=0.0038
+  Client 9: 3 epochs, 2045 samples, Effort=6135, Loss=0.0039
+  Client 10: 3 epochs, 2638 samples, Effort=7914, Loss=0.0039
+Round 30 │ MSE=0.0007 │ PSNR=31.49 dB │ Avg Loss=0.0039 │ Loss Std=0.0001
+         │ Participation Gini=0.000 │ Effort Gini=0.066
+--------------------------------------------------------------------------------
+
+Round 31
+Selected clients: [(1, 3), (2, 3), (3, 3), (4, 3), (5, 3), (6, 3), (7, 3), (8, 3), (9, 3), (10, 3)]
+  Client 1: 3 epochs, 2902 samples, Effort=8706, Loss=0.0038
+  Client 2: 3 epochs, 2452 samples, Effort=7356, Loss=0.0040
+  Client 3: 3 epochs, 2356 samples, Effort=7068, Loss=0.0039
+  Client 4: 3 epochs, 2221 samples, Effort=6663, Loss=0.0039
+  Client 5: 3 epochs, 2887 samples, Effort=8661, Loss=0.0039
+  Client 6: 3 epochs, 2254 samples, Effort=6762, Loss=0.0039
+  Client 7: 3 epochs, 2888 samples, Effort=8664, Loss=0.0037
+  Client 8: 3 epochs, 2354 samples, Effort=7062, Loss=0.0038
+  Client 9: 3 epochs, 2045 samples, Effort=6135, Loss=0.0038
+  Client 10: 3 epochs, 2638 samples, Effort=7914, Loss=0.0039
+Round 31 │ MSE=0.0007 │ PSNR=31.53 dB │ Avg Loss=0.0039 │ Loss Std=0.0001
+         │ Participation Gini=0.000 │ Effort Gini=0.066
+--------------------------------------------------------------------------------
+
+Round 32
+Selected clients: [(1, 3), (2, 3), (3, 3), (4, 3), (5, 3), (6, 3), (7, 3), (8, 3), (9, 3), (10, 3)]
+  Client 1: 3 epochs, 2902 samples, Effort=8706, Loss=0.0038
+  Client 2: 3 epochs, 2452 samples, Effort=7356, Loss=0.0040
+  Client 3: 3 epochs, 2356 samples, Effort=7068, Loss=0.0039
+  Client 4: 3 epochs, 2221 samples, Effort=6663, Loss=0.0039
+  Client 5: 3 epochs, 2887 samples, Effort=8661, Loss=0.0038
+  Client 6: 3 epochs, 2254 samples, Effort=6762, Loss=0.0039
+  Client 7: 3 epochs, 2888 samples, Effort=8664, Loss=0.0037
+  Client 8: 3 epochs, 2354 samples, Effort=7062, Loss=0.0038
+  Client 9: 3 epochs, 2045 samples, Effort=6135, Loss=0.0038
+  Client 10: 3 epochs, 2638 samples, Effort=7914, Loss=0.0039
+Round 32 │ MSE=0.0007 │ PSNR=31.55 dB │ Avg Loss=0.0038 │ Loss Std=0.0001
+         │ Participation Gini=0.000 │ Effort Gini=0.066
+--------------------------------------------------------------------------------
+
+Round 33
+Selected clients: [(1, 3), (2, 3), (3, 3), (4, 3), (5, 3), (6, 3), (7, 3), (8, 3), (9, 3), (10, 3)]
+  Client 1: 3 epochs, 2902 samples, Effort=8706, Loss=0.0037
+  Client 2: 3 epochs, 2452 samples, Effort=7356, Loss=0.0039
+  Client 3: 3 epochs, 2356 samples, Effort=7068, Loss=0.0038
+  Client 4: 3 epochs, 2221 samples, Effort=6663, Loss=0.0038
+  Client 5: 3 epochs, 2887 samples, Effort=8661, Loss=0.0038
+  Client 6: 3 epochs, 2254 samples, Effort=6762, Loss=0.0039
+  Client 7: 3 epochs, 2888 samples, Effort=8664, Loss=0.0037
+  Client 8: 3 epochs, 2354 samples, Effort=7062, Loss=0.0037
+  Client 9: 3 epochs, 2045 samples, Effort=6135, Loss=0.0037
+  Client 10: 3 epochs, 2638 samples, Effort=7914, Loss=0.0038
+Round 33 │ MSE=0.0007 │ PSNR=31.62 dB │ Avg Loss=0.0038 │ Loss Std=0.0001
+         │ Participation Gini=0.000 │ Effort Gini=0.066
+--------------------------------------------------------------------------------
+
+Round 34
+Selected clients: [(1, 3), (2, 3), (3, 3), (4, 3), (5, 3), (6, 3), (7, 3), (8, 3), (9, 3), (10, 3)]
+  Client 1: 3 epochs, 2902 samples, Effort=8706, Loss=0.0038
+  Client 2: 3 epochs, 2452 samples, Effort=7356, Loss=0.0039
+  Client 3: 3 epochs, 2356 samples, Effort=7068, Loss=0.0038
+  Client 4: 3 epochs, 2221 samples, Effort=6663, Loss=0.0039
+  Client 5: 3 epochs, 2887 samples, Effort=8661, Loss=0.0038
+  Client 6: 3 epochs, 2254 samples, Effort=6762, Loss=0.0039
+  Client 7: 3 epochs, 2888 samples, Effort=8664, Loss=0.0037
+  Client 8: 3 epochs, 2354 samples, Effort=7062, Loss=0.0037
+  Client 9: 3 epochs, 2045 samples, Effort=6135, Loss=0.0037
+  Client 10: 3 epochs, 2638 samples, Effort=7914, Loss=0.0038
+Round 34 │ MSE=0.0007 │ PSNR=31.64 dB │ Avg Loss=0.0038 │ Loss Std=0.0001
+         │ Participation Gini=0.000 │ Effort Gini=0.066
+--------------------------------------------------------------------------------
+
+Round 35
+Selected clients: [(1, 3), (2, 3), (3, 3), (4, 3), (5, 3), (6, 3), (7, 3), (8, 3), (9, 3), (10, 3)]
+  Client 1: 3 epochs, 2902 samples, Effort=8706, Loss=0.0037
+  Client 2: 3 epochs, 2452 samples, Effort=7356, Loss=0.0038
+  Client 3: 3 epochs, 2356 samples, Effort=7068, Loss=0.0038
+  Client 4: 3 epochs, 2221 samples, Effort=6663, Loss=0.0038
+  Client 5: 3 epochs, 2887 samples, Effort=8661, Loss=0.0038
+  Client 6: 3 epochs, 2254 samples, Effort=6762, Loss=0.0038
+  Client 7: 3 epochs, 2888 samples, Effort=8664, Loss=0.0037
+  Client 8: 3 epochs, 2354 samples, Effort=7062, Loss=0.0037
+  Client 9: 3 epochs, 2045 samples, Effort=6135, Loss=0.0037
+  Client 10: 3 epochs, 2638 samples, Effort=7914, Loss=0.0038
+Round 35 │ MSE=0.0007 │ PSNR=31.71 dB │ Avg Loss=0.0037 │ Loss Std=0.0001
+         │ Participation Gini=0.000 │ Effort Gini=0.066
+--------------------------------------------------------------------------------
+
+Training completed!
+
+Final Fairness Analysis:
+Participation distribution: [35, 35, 35, 35, 35, 35, 35, 35, 35, 35]
+Total effort distribution: [304710, 257460, 247380, 233205, 303135, 236670, 303240, 247170, 214725, 276990]
+Participation Gini coefficient: 0.000
+Effort Gini coefficient: 0.066
+Generating final reconstruction comparison...
+(base) simurgh@simurgh SemComSim % python fed_semcom_v4_iot_fair.py 
+Using device: mps
+FedLoL IoT v11 - Client Selection Strategy: UTILITARIAN
+Configuration: 10 clients, 6 selected per round, 35 rounds
+Using Tiny ImageNet dataset
+Model size: 17.53 MB
+Total parameters: 4,596,227
+
+Client Data Distribution:
+  Client 1: 2902 samples
+  Client 2: 2452 samples
+  Client 3: 2356 samples
+  Client 4: 2221 samples
+  Client 5: 2887 samples
+  Client 6: 2254 samples
+  Client 7: 2888 samples
+  Client 8: 2354 samples
+  Client 9: 2045 samples
+  Client 10: 2638 samples
+
+Starting federated training for 35 rounds...
+================================================================================
+
+Round 01
+Selected clients: [(1, 4), (4, 4), (5, 3), (9, 4), (7, 2), (10, 2)]
+  Client 1: 4 epochs, 2902 samples, Effort=11608, Loss=0.0293
+  Client 4: 4 epochs, 2221 samples, Effort=8884, Loss=0.0327
+  Client 5: 3 epochs, 2887 samples, Effort=8661, Loss=0.0336
+  Client 9: 4 epochs, 2045 samples, Effort=8180, Loss=0.0322
+  Client 7: 2 epochs, 2888 samples, Effort=5776, Loss=0.0398
+  Client 10: 2 epochs, 2638 samples, Effort=5276, Loss=0.0411
+Round 01 │ MSE=0.0095 │ PSNR=20.21 dB │ Avg Loss=0.0348 │ Loss Std=0.0042
+         │ Participation Gini=0.400 │ Effort Gini=0.486
+--------------------------------------------------------------------------------
+
+Round 02
+Selected clients: [(1, 4), (5, 4), (2, 4), (3, 4), (6, 3), (7, 2)]
+  Client 1: 4 epochs, 2902 samples, Effort=11608, Loss=0.0164
+  Client 5: 4 epochs, 2887 samples, Effort=11548, Loss=0.0163
+  Client 2: 4 epochs, 2452 samples, Effort=9808, Loss=0.0175
+  Client 3: 4 epochs, 2356 samples, Effort=9424, Loss=0.0176
+  Client 6: 3 epochs, 2254 samples, Effort=6762, Loss=0.0180
+  Client 7: 2 epochs, 2888 samples, Effort=5776, Loss=0.0178
+Round 02 │ MSE=0.0058 │ PSNR=22.39 dB │ Avg Loss=0.0173 │ Loss Std=0.0007
+         │ Participation Gini=0.250 │ Effort Gini=0.332
+--------------------------------------------------------------------------------
+
+Round 03
+Selected clients: [(7, 4), (5, 4), (10, 4), (2, 4), (3, 4), (8, 4)]
+  Client 7: 4 epochs, 2888 samples, Effort=11552, Loss=0.0122
+  Client 5: 4 epochs, 2887 samples, Effort=11548, Loss=0.0129
+  Client 10: 4 epochs, 2638 samples, Effort=10552, Loss=0.0125
+  Client 2: 4 epochs, 2452 samples, Effort=9808, Loss=0.0134
+  Client 3: 4 epochs, 2356 samples, Effort=9424, Loss=0.0136
+  Client 8: 4 epochs, 2354 samples, Effort=9416, Loss=0.0132
+Round 03 │ MSE=0.0036 │ PSNR=24.44 dB │ Avg Loss=0.0130 │ Loss Std=0.0005
+         │ Participation Gini=0.222 │ Effort Gini=0.263
+--------------------------------------------------------------------------------
+
+Round 04
+Selected clients: [(8, 4), (4, 4), (1, 3), (5, 3), (10, 3), (3, 3)]
+  Client 8: 4 epochs, 2354 samples, Effort=9416, Loss=0.0100
+  Client 4: 4 epochs, 2221 samples, Effort=8884, Loss=0.0100
+  Client 1: 3 epochs, 2902 samples, Effort=8706, Loss=0.0103
+  Client 5: 3 epochs, 2887 samples, Effort=8661, Loss=0.0103
+  Client 10: 3 epochs, 2638 samples, Effort=7914, Loss=0.0100
+  Client 3: 3 epochs, 2356 samples, Effort=7068, Loss=0.0107
+Round 04 │ MSE=0.0025 │ PSNR=25.96 dB │ Avg Loss=0.0102 │ Loss Std=0.0003
+         │ Participation Gini=0.208 │ Effort Gini=0.244
+--------------------------------------------------------------------------------
+
+Round 05
+Selected clients: [(1, 3), (7, 3), (10, 3), (4, 3), (9, 3), (5, 2)]
+  Client 1: 3 epochs, 2902 samples, Effort=8706, Loss=0.0084
+  Client 7: 3 epochs, 2888 samples, Effort=8664, Loss=0.0082
+  Client 10: 3 epochs, 2638 samples, Effort=7914, Loss=0.0083
+  Client 4: 3 epochs, 2221 samples, Effort=6663, Loss=0.0083
+  Client 9: 3 epochs, 2045 samples, Effort=6135, Loss=0.0083
+  Client 5: 2 epochs, 2887 samples, Effort=5774, Loss=0.0089
+Round 05 │ MSE=0.0020 │ PSNR=27.05 dB │ Avg Loss=0.0084 │ Loss Std=0.0002
+         │ Participation Gini=0.220 │ Effort Gini=0.247
+--------------------------------------------------------------------------------
+
+Round 06
+Selected clients: [(1, 4), (10, 4), (6, 4), (4, 4), (5, 3), (2, 3)]
+  Client 1: 4 epochs, 2902 samples, Effort=11608, Loss=0.0072
+  Client 10: 4 epochs, 2638 samples, Effort=10552, Loss=0.0072
+  Client 6: 4 epochs, 2254 samples, Effort=9016, Loss=0.0075
+  Client 4: 4 epochs, 2221 samples, Effort=8884, Loss=0.0074
+  Client 5: 3 epochs, 2887 samples, Effort=8661, Loss=0.0075
+  Client 2: 3 epochs, 2452 samples, Effort=7356, Loss=0.0078
+Round 06 │ MSE=0.0015 │ PSNR=28.18 dB │ Avg Loss=0.0074 │ Loss Std=0.0002
+         │ Participation Gini=0.211 │ Effort Gini=0.242
+--------------------------------------------------------------------------------
+
+Round 07
+Selected clients: [(7, 4), (5, 4), (10, 4), (2, 4), (3, 4), (1, 3)]
+  Client 7: 4 epochs, 2888 samples, Effort=11552, Loss=0.0061
+  Client 5: 4 epochs, 2887 samples, Effort=11548, Loss=0.0063
+  Client 10: 4 epochs, 2638 samples, Effort=10552, Loss=0.0064
+  Client 2: 4 epochs, 2452 samples, Effort=9808, Loss=0.0066
+  Client 3: 4 epochs, 2356 samples, Effort=9424, Loss=0.0065
+  Client 1: 3 epochs, 2902 samples, Effort=8706, Loss=0.0065
+Round 07 │ MSE=0.0012 │ PSNR=29.14 dB │ Avg Loss=0.0064 │ Loss Std=0.0001
+         │ Participation Gini=0.229 │ Effort Gini=0.261
+--------------------------------------------------------------------------------
+
+Round 08
+Selected clients: [(7, 3), (9, 4), (10, 3), (2, 3), (8, 3), (6, 3)]
+  Client 7: 3 epochs, 2888 samples, Effort=8664, Loss=0.0055
+  Client 9: 4 epochs, 2045 samples, Effort=8180, Loss=0.0055
+  Client 10: 3 epochs, 2638 samples, Effort=7914, Loss=0.0058
+  Client 2: 3 epochs, 2452 samples, Effort=7356, Loss=0.0059
+  Client 8: 3 epochs, 2354 samples, Effort=7062, Loss=0.0057
+  Client 6: 3 epochs, 2254 samples, Effort=6762, Loss=0.0059
+Round 08 │ MSE=0.0011 │ PSNR=29.60 dB │ Avg Loss=0.0057 │ Loss Std=0.0001
+         │ Participation Gini=0.179 │ Effort Gini=0.213
+--------------------------------------------------------------------------------
+
+Round 09
+Selected clients: [(7, 4), (5, 4), (8, 4), (9, 4), (2, 3), (3, 3)]
+  Client 7: 4 epochs, 2888 samples, Effort=11552, Loss=0.0051
+  Client 5: 4 epochs, 2887 samples, Effort=11548, Loss=0.0052
+  Client 8: 4 epochs, 2354 samples, Effort=9416, Loss=0.0051
+  Client 9: 4 epochs, 2045 samples, Effort=8180, Loss=0.0052
+  Client 2: 3 epochs, 2452 samples, Effort=7356, Loss=0.0055
+  Client 3: 3 epochs, 2356 samples, Effort=7068, Loss=0.0054
+Round 09 │ MSE=0.0010 │ PSNR=29.86 dB │ Avg Loss=0.0053 │ Loss Std=0.0002
+         │ Participation Gini=0.163 │ Effort Gini=0.199
+--------------------------------------------------------------------------------
+
+Round 10
+Selected clients: [(1, 4), (5, 4), (2, 4), (4, 4), (10, 3), (8, 3)]
+  Client 1: 4 epochs, 2902 samples, Effort=11608, Loss=0.0049
+  Client 5: 4 epochs, 2887 samples, Effort=11548, Loss=0.0049
+  Client 2: 4 epochs, 2452 samples, Effort=9808, Loss=0.0051
+  Client 4: 4 epochs, 2221 samples, Effort=8884, Loss=0.0050
+  Client 10: 3 epochs, 2638 samples, Effort=7914, Loss=0.0051
+  Client 8: 3 epochs, 2354 samples, Effort=7062, Loss=0.0049
+Round 10 │ MSE=0.0009 │ PSNR=30.25 dB │ Avg Loss=0.0050 │ Loss Std=0.0001
+         │ Participation Gini=0.167 │ Effort Gini=0.207
+--------------------------------------------------------------------------------
+
+Round 11
+Selected clients: [(1, 4), (5, 4), (2, 4), (3, 4), (10, 3), (6, 3)]
+  Client 1: 4 epochs, 2902 samples, Effort=11608, Loss=0.0047
+  Client 5: 4 epochs, 2887 samples, Effort=11548, Loss=0.0048
+  Client 2: 4 epochs, 2452 samples, Effort=9808, Loss=0.0050
+  Client 3: 4 epochs, 2356 samples, Effort=9424, Loss=0.0048
+  Client 10: 3 epochs, 2638 samples, Effort=7914, Loss=0.0049
+  Client 6: 3 epochs, 2254 samples, Effort=6762, Loss=0.0050
+Round 11 │ MSE=0.0009 │ PSNR=30.43 dB │ Avg Loss=0.0049 │ Loss Std=0.0001
+         │ Participation Gini=0.173 │ Effort Gini=0.218
+--------------------------------------------------------------------------------
+
+Round 12
+Selected clients: [(5, 4), (6, 4), (1, 3), (7, 3), (9, 4), (10, 3)]
+  Client 5: 4 epochs, 2887 samples, Effort=11548, Loss=0.0046
+  Client 6: 4 epochs, 2254 samples, Effort=9016, Loss=0.0048
+  Client 1: 3 epochs, 2902 samples, Effort=8706, Loss=0.0047
+  Client 7: 3 epochs, 2888 samples, Effort=8664, Loss=0.0046
+  Client 9: 4 epochs, 2045 samples, Effort=8180, Loss=0.0046
+  Client 10: 3 epochs, 2638 samples, Effort=7914, Loss=0.0048
+Round 12 │ MSE=0.0009 │ PSNR=30.51 dB │ Avg Loss=0.0047 │ Loss Std=0.0001
+         │ Participation Gini=0.167 │ Effort Gini=0.211
+--------------------------------------------------------------------------------
+
+Round 13
+Selected clients: [(10, 4), (2, 4), (8, 4), (1, 3), (5, 3), (9, 4)]
+  Client 10: 4 epochs, 2638 samples, Effort=10552, Loss=0.0046
+  Client 2: 4 epochs, 2452 samples, Effort=9808, Loss=0.0048
+  Client 8: 4 epochs, 2354 samples, Effort=9416, Loss=0.0045
+  Client 1: 3 epochs, 2902 samples, Effort=8706, Loss=0.0047
+  Client 5: 3 epochs, 2887 samples, Effort=8661, Loss=0.0046
+  Client 9: 4 epochs, 2045 samples, Effort=8180, Loss=0.0045
+Round 13 │ MSE=0.0009 │ PSNR=30.60 dB │ Avg Loss=0.0046 │ Loss Std=0.0001
+         │ Participation Gini=0.174 │ Effort Gini=0.215
+--------------------------------------------------------------------------------
+
+Round 14
+Selected clients: [(5, 4), (10, 4), (2, 4), (3, 4), (1, 3), (7, 3)]
+  Client 5: 4 epochs, 2887 samples, Effort=11548, Loss=0.0045
+  Client 10: 4 epochs, 2638 samples, Effort=10552, Loss=0.0046
+  Client 2: 4 epochs, 2452 samples, Effort=9808, Loss=0.0047
+  Client 3: 4 epochs, 2356 samples, Effort=9424, Loss=0.0046
+  Client 1: 3 epochs, 2902 samples, Effort=8706, Loss=0.0046
+  Client 7: 3 epochs, 2888 samples, Effort=8664, Loss=0.0045
+Round 14 │ MSE=0.0009 │ PSNR=30.68 dB │ Avg Loss=0.0046 │ Loss Std=0.0001
+         │ Participation Gini=0.190 │ Effort Gini=0.231
+--------------------------------------------------------------------------------
+
+Round 15
+Selected clients: [(10, 4), (8, 4), (6, 4), (1, 3), (9, 3), (7, 2)]
+  Client 10: 4 epochs, 2638 samples, Effort=10552, Loss=0.0044
+  Client 8: 4 epochs, 2354 samples, Effort=9416, Loss=0.0043
+  Client 6: 4 epochs, 2254 samples, Effort=9016, Loss=0.0045
+  Client 1: 3 epochs, 2902 samples, Effort=8706, Loss=0.0044
+  Client 9: 3 epochs, 2045 samples, Effort=6135, Loss=0.0044
+  Client 7: 2 epochs, 2888 samples, Effort=5776, Loss=0.0044
+Round 15 │ MSE=0.0008 │ PSNR=30.74 dB │ Avg Loss=0.0044 │ Loss Std=0.0000
+         │ Participation Gini=0.176 │ Effort Gini=0.215
+--------------------------------------------------------------------------------
+
+Round 16
+Selected clients: [(10, 4), (8, 4), (6, 4), (4, 4), (7, 3), (5, 3)]
+  Client 10: 4 epochs, 2638 samples, Effort=10552, Loss=0.0044
+  Client 8: 4 epochs, 2354 samples, Effort=9416, Loss=0.0043
+  Client 6: 4 epochs, 2254 samples, Effort=9016, Loss=0.0045
+  Client 4: 4 epochs, 2221 samples, Effort=8884, Loss=0.0044
+  Client 7: 3 epochs, 2888 samples, Effort=8664, Loss=0.0043
+  Client 5: 3 epochs, 2887 samples, Effort=8661, Loss=0.0044
+Round 16 │ MSE=0.0008 │ PSNR=30.90 dB │ Avg Loss=0.0044 │ Loss Std=0.0001
+         │ Participation Gini=0.167 │ Effort Gini=0.204
+--------------------------------------------------------------------------------
+
+Round 17
+Selected clients: [(1, 4), (3, 4), (6, 4), (4, 4), (7, 3), (5, 3)]
+  Client 1: 4 epochs, 2902 samples, Effort=11608, Loss=0.0043
+  Client 3: 4 epochs, 2356 samples, Effort=9424, Loss=0.0043
+  Client 6: 4 epochs, 2254 samples, Effort=9016, Loss=0.0043
+  Client 4: 4 epochs, 2221 samples, Effort=8884, Loss=0.0042
+  Client 7: 3 epochs, 2888 samples, Effort=8664, Loss=0.0042
+  Client 5: 3 epochs, 2887 samples, Effort=8661, Loss=0.0042
+Round 17 │ MSE=0.0008 │ PSNR=30.98 dB │ Avg Loss=0.0043 │ Loss Std=0.0001
+         │ Participation Gini=0.157 │ Effort Gini=0.195
+--------------------------------------------------------------------------------
+
+Round 18
+Selected clients: [(7, 4), (5, 4), (4, 4), (9, 4), (2, 3), (6, 3)]
+  Client 7: 4 epochs, 2888 samples, Effort=11552, Loss=0.0041
+  Client 5: 4 epochs, 2887 samples, Effort=11548, Loss=0.0043
+  Client 4: 4 epochs, 2221 samples, Effort=8884, Loss=0.0043
+  Client 9: 4 epochs, 2045 samples, Effort=8180, Loss=0.0042
+  Client 2: 3 epochs, 2452 samples, Effort=7356, Loss=0.0045
+  Client 6: 3 epochs, 2254 samples, Effort=6762, Loss=0.0044
+Round 18 │ MSE=0.0008 │ PSNR=31.04 dB │ Avg Loss=0.0043 │ Loss Std=0.0001
+         │ Participation Gini=0.144 │ Effort Gini=0.182
+--------------------------------------------------------------------------------
+
+Round 19
+Selected clients: [(1, 4), (5, 4), (10, 4), (3, 4), (4, 4), (2, 3)]
+  Client 1: 4 epochs, 2902 samples, Effort=11608, Loss=0.0042
+  Client 5: 4 epochs, 2887 samples, Effort=11548, Loss=0.0041
+  Client 10: 4 epochs, 2638 samples, Effort=10552, Loss=0.0042
+  Client 3: 4 epochs, 2356 samples, Effort=9424, Loss=0.0042
+  Client 4: 4 epochs, 2221 samples, Effort=8884, Loss=0.0042
+  Client 2: 3 epochs, 2452 samples, Effort=7356, Loss=0.0043
+Round 19 │ MSE=0.0008 │ PSNR=31.12 dB │ Avg Loss=0.0042 │ Loss Std=0.0001
+         │ Participation Gini=0.149 │ Effort Gini=0.190
+--------------------------------------------------------------------------------
+
+Round 20
+Selected clients: [(1, 4), (3, 4), (5, 3), (8, 3), (4, 3), (9, 3)]
+  Client 1: 4 epochs, 2902 samples, Effort=11608, Loss=0.0041
+  Client 3: 4 epochs, 2356 samples, Effort=9424, Loss=0.0042
+  Client 5: 3 epochs, 2887 samples, Effort=8661, Loss=0.0041
+  Client 8: 3 epochs, 2354 samples, Effort=7062, Loss=0.0040
+  Client 4: 3 epochs, 2221 samples, Effort=6663, Loss=0.0041
+  Client 9: 3 epochs, 2045 samples, Effort=6135, Loss=0.0040
+Round 20 │ MSE=0.0008 │ PSNR=31.16 dB │ Avg Loss=0.0041 │ Loss Std=0.0001
+         │ Participation Gini=0.137 │ Effort Gini=0.185
+--------------------------------------------------------------------------------
+
+Round 21
+Selected clients: [(3, 4), (6, 4), (7, 3), (9, 4), (1, 2), (5, 2)]
+  Client 3: 4 epochs, 2356 samples, Effort=9424, Loss=0.0042
+  Client 6: 4 epochs, 2254 samples, Effort=9016, Loss=0.0042
+  Client 7: 3 epochs, 2888 samples, Effort=8664, Loss=0.0040
+  Client 9: 4 epochs, 2045 samples, Effort=8180, Loss=0.0040
+  Client 1: 2 epochs, 2902 samples, Effort=5804, Loss=0.0042
+  Client 5: 2 epochs, 2887 samples, Effort=5774, Loss=0.0042
+Round 21 │ MSE=0.0008 │ PSNR=31.20 dB │ Avg Loss=0.0041 │ Loss Std=0.0001
+         │ Participation Gini=0.135 │ Effort Gini=0.176
+--------------------------------------------------------------------------------
+
+Round 22
+Selected clients: [(7, 4), (2, 4), (8, 4), (4, 4), (3, 3), (6, 3)]
+  Client 7: 4 epochs, 2888 samples, Effort=11552, Loss=0.0040
+  Client 2: 4 epochs, 2452 samples, Effort=9808, Loss=0.0042
+  Client 8: 4 epochs, 2354 samples, Effort=9416, Loss=0.0040
+  Client 4: 4 epochs, 2221 samples, Effort=8884, Loss=0.0041
+  Client 3: 3 epochs, 2356 samples, Effort=7068, Loss=0.0042
+  Client 6: 3 epochs, 2254 samples, Effort=6762, Loss=0.0042
+Round 22 │ MSE=0.0007 │ PSNR=31.27 dB │ Avg Loss=0.0041 │ Loss Std=0.0001
+         │ Participation Gini=0.118 │ Effort Gini=0.160
+--------------------------------------------------------------------------------
+
+Round 23
+Selected clients: [(1, 4), (5, 4), (2, 4), (3, 4), (8, 4), (7, 3)]
+  Client 1: 4 epochs, 2902 samples, Effort=11608, Loss=0.0040
+  Client 5: 4 epochs, 2887 samples, Effort=11548, Loss=0.0040
+  Client 2: 4 epochs, 2452 samples, Effort=9808, Loss=0.0041
+  Client 3: 4 epochs, 2356 samples, Effort=9424, Loss=0.0040
+  Client 8: 4 epochs, 2354 samples, Effort=9416, Loss=0.0039
+  Client 7: 3 epochs, 2888 samples, Effort=8664, Loss=0.0040
+Round 23 │ MSE=0.0007 │ PSNR=31.29 dB │ Avg Loss=0.0040 │ Loss Std=0.0001
+         │ Participation Gini=0.123 │ Effort Gini=0.167
+--------------------------------------------------------------------------------
+
+Round 24
+Selected clients: [(10, 4), (2, 4), (1, 3), (3, 3), (8, 3), (7, 2)]
+  Client 10: 4 epochs, 2638 samples, Effort=10552, Loss=0.0040
+  Client 2: 4 epochs, 2452 samples, Effort=9808, Loss=0.0041
+  Client 1: 3 epochs, 2902 samples, Effort=8706, Loss=0.0040
+  Client 3: 3 epochs, 2356 samples, Effort=7068, Loss=0.0041
+  Client 8: 3 epochs, 2354 samples, Effort=7062, Loss=0.0039
+  Client 7: 2 epochs, 2888 samples, Effort=5776, Loss=0.0039
+Round 24 │ MSE=0.0007 │ PSNR=31.30 dB │ Avg Loss=0.0040 │ Loss Std=0.0001
+         │ Participation Gini=0.126 │ Effort Gini=0.169
+--------------------------------------------------------------------------------
+
+Round 25
+Selected clients: [(1, 4), (7, 4), (3, 4), (8, 4), (5, 2), (10, 2)]
+  Client 1: 4 epochs, 2902 samples, Effort=11608, Loss=0.0039
+  Client 7: 4 epochs, 2888 samples, Effort=11552, Loss=0.0038
+  Client 3: 4 epochs, 2356 samples, Effort=9424, Loss=0.0040
+  Client 8: 4 epochs, 2354 samples, Effort=9416, Loss=0.0039
+  Client 5: 2 epochs, 2887 samples, Effort=5774, Loss=0.0040
+  Client 10: 2 epochs, 2638 samples, Effort=5276, Loss=0.0041
+Round 25 │ MSE=0.0007 │ PSNR=31.35 dB │ Avg Loss=0.0040 │ Loss Std=0.0001
+         │ Participation Gini=0.135 │ Effort Gini=0.175
+--------------------------------------------------------------------------------
+
+Round 26
+Selected clients: [(5, 4), (8, 4), (7, 3), (3, 3), (9, 3), (1, 2)]
+  Client 5: 4 epochs, 2887 samples, Effort=11548, Loss=0.0039
+  Client 8: 4 epochs, 2354 samples, Effort=9416, Loss=0.0039
+  Client 7: 3 epochs, 2888 samples, Effort=8664, Loss=0.0039
+  Client 3: 3 epochs, 2356 samples, Effort=7068, Loss=0.0040
+  Client 9: 3 epochs, 2045 samples, Effort=6135, Loss=0.0039
+  Client 1: 2 epochs, 2902 samples, Effort=5804, Loss=0.0040
+Round 26 │ MSE=0.0007 │ PSNR=31.45 dB │ Avg Loss=0.0039 │ Loss Std=0.0000
+         │ Participation Gini=0.136 │ Effort Gini=0.176
+--------------------------------------------------------------------------------
+
+Round 27
+Selected clients: [(1, 4), (5, 4), (3, 4), (4, 4), (8, 3), (6, 3)]
+  Client 1: 4 epochs, 2902 samples, Effort=11608, Loss=0.0039
+  Client 5: 4 epochs, 2887 samples, Effort=11548, Loss=0.0039
+  Client 3: 4 epochs, 2356 samples, Effort=9424, Loss=0.0040
+  Client 4: 4 epochs, 2221 samples, Effort=8884, Loss=0.0039
+  Client 8: 3 epochs, 2354 samples, Effort=7062, Loss=0.0038
+  Client 6: 3 epochs, 2254 samples, Effort=6762, Loss=0.0041
+Round 27 │ MSE=0.0007 │ PSNR=31.50 dB │ Avg Loss=0.0039 │ Loss Std=0.0001
+         │ Participation Gini=0.132 │ Effort Gini=0.175
+--------------------------------------------------------------------------------
+
+Round 28
+Selected clients: [(3, 4), (7, 3), (5, 3), (9, 4), (8, 3), (6, 3)]
+  Client 3: 4 epochs, 2356 samples, Effort=9424, Loss=0.0039
+  Client 7: 3 epochs, 2888 samples, Effort=8664, Loss=0.0038
+  Client 5: 3 epochs, 2887 samples, Effort=8661, Loss=0.0039
+  Client 9: 4 epochs, 2045 samples, Effort=8180, Loss=0.0038
+  Client 8: 3 epochs, 2354 samples, Effort=7062, Loss=0.0038
+  Client 6: 3 epochs, 2254 samples, Effort=6762, Loss=0.0040
+Round 28 │ MSE=0.0007 │ PSNR=31.52 dB │ Avg Loss=0.0039 │ Loss Std=0.0001
+         │ Participation Gini=0.129 │ Effort Gini=0.169
+--------------------------------------------------------------------------------
+
+Round 29
+Selected clients: [(1, 4), (7, 4), (2, 4), (3, 4), (8, 3), (6, 3)]
+  Client 1: 4 epochs, 2902 samples, Effort=11608, Loss=0.0038
+  Client 7: 4 epochs, 2888 samples, Effort=11552, Loss=0.0038
+  Client 2: 4 epochs, 2452 samples, Effort=9808, Loss=0.0039
+  Client 3: 4 epochs, 2356 samples, Effort=9424, Loss=0.0039
+  Client 8: 3 epochs, 2354 samples, Effort=7062, Loss=0.0037
+  Client 6: 3 epochs, 2254 samples, Effort=6762, Loss=0.0039
+Round 29 │ MSE=0.0007 │ PSNR=31.57 dB │ Avg Loss=0.0038 │ Loss Std=0.0001
+         │ Participation Gini=0.128 │ Effort Gini=0.170
+--------------------------------------------------------------------------------
+
+Round 30
+Selected clients: [(3, 4), (8, 3), (6, 3), (4, 3), (9, 3), (1, 2)]
+  Client 3: 4 epochs, 2356 samples, Effort=9424, Loss=0.0039
+  Client 8: 3 epochs, 2354 samples, Effort=7062, Loss=0.0038
+  Client 6: 3 epochs, 2254 samples, Effort=6762, Loss=0.0039
+  Client 4: 3 epochs, 2221 samples, Effort=6663, Loss=0.0039
+  Client 9: 3 epochs, 2045 samples, Effort=6135, Loss=0.0038
+  Client 1: 2 epochs, 2902 samples, Effort=5804, Loss=0.0039
+Round 30 │ MSE=0.0007 │ PSNR=31.54 dB │ Avg Loss=0.0039 │ Loss Std=0.0000
+         │ Participation Gini=0.118 │ Effort Gini=0.160
+--------------------------------------------------------------------------------
+
+Round 31
+Selected clients: [(7, 4), (3, 4), (6, 4), (2, 3), (1, 2), (5, 2)]
+  Client 7: 4 epochs, 2888 samples, Effort=11552, Loss=0.0037
+  Client 3: 4 epochs, 2356 samples, Effort=9424, Loss=0.0039
+  Client 6: 4 epochs, 2254 samples, Effort=9016, Loss=0.0039
+  Client 2: 3 epochs, 2452 samples, Effort=7356, Loss=0.0040
+  Client 1: 2 epochs, 2902 samples, Effort=5804, Loss=0.0039
+  Client 5: 2 epochs, 2887 samples, Effort=5774, Loss=0.0039
+Round 31 │ MSE=0.0007 │ PSNR=31.65 dB │ Avg Loss=0.0039 │ Loss Std=0.0001
+         │ Participation Gini=0.123 │ Effort Gini=0.163
+--------------------------------------------------------------------------------
+
+Round 32
+Selected clients: [(2, 3), (3, 3), (6, 3), (4, 3), (9, 3), (1, 2)]
+  Client 2: 3 epochs, 2452 samples, Effort=7356, Loss=0.0039
+  Client 3: 3 epochs, 2356 samples, Effort=7068, Loss=0.0038
+  Client 6: 3 epochs, 2254 samples, Effort=6762, Loss=0.0039
+  Client 4: 3 epochs, 2221 samples, Effort=6663, Loss=0.0038
+  Client 9: 3 epochs, 2045 samples, Effort=6135, Loss=0.0037
+  Client 1: 2 epochs, 2902 samples, Effort=5804, Loss=0.0038
+Round 32 │ MSE=0.0007 │ PSNR=31.62 dB │ Avg Loss=0.0038 │ Loss Std=0.0001
+         │ Participation Gini=0.112 │ Effort Gini=0.155
+--------------------------------------------------------------------------------
+
+Round 33
+Selected clients: [(7, 4), (10, 4), (8, 4), (6, 4), (1, 3), (5, 3)]
+  Client 7: 4 epochs, 2888 samples, Effort=11552, Loss=0.0036
+  Client 10: 4 epochs, 2638 samples, Effort=10552, Loss=0.0038
+  Client 8: 4 epochs, 2354 samples, Effort=9416, Loss=0.0037
+  Client 6: 4 epochs, 2254 samples, Effort=9016, Loss=0.0038
+  Client 1: 3 epochs, 2902 samples, Effort=8706, Loss=0.0037
+  Client 5: 3 epochs, 2887 samples, Effort=8661, Loss=0.0038
+Round 33 │ MSE=0.0007 │ PSNR=31.68 dB │ Avg Loss=0.0037 │ Loss Std=0.0001
+         │ Participation Gini=0.116 │ Effort Gini=0.157
+--------------------------------------------------------------------------------
+
+Round 34
+Selected clients: [(7, 4), (8, 4), (1, 3), (9, 4), (4, 3), (5, 2)]
+  Client 7: 4 epochs, 2888 samples, Effort=11552, Loss=0.0036
+  Client 8: 4 epochs, 2354 samples, Effort=9416, Loss=0.0037
+  Client 1: 3 epochs, 2902 samples, Effort=8706, Loss=0.0038
+  Client 9: 4 epochs, 2045 samples, Effort=8180, Loss=0.0037
+  Client 4: 3 epochs, 2221 samples, Effort=6663, Loss=0.0038
+  Client 5: 2 epochs, 2887 samples, Effort=5774, Loss=0.0039
+Round 34 │ MSE=0.0007 │ PSNR=31.69 dB │ Avg Loss=0.0037 │ Loss Std=0.0001
+         │ Participation Gini=0.116 │ Effort Gini=0.155
+--------------------------------------------------------------------------------
+
+Round 35
+Selected clients: [(1, 4), (7, 4), (5, 4), (8, 4), (2, 3), (6, 3)]
+  Client 1: 4 epochs, 2902 samples, Effort=11608, Loss=0.0037
+  Client 7: 4 epochs, 2888 samples, Effort=11552, Loss=0.0037
+  Client 5: 4 epochs, 2887 samples, Effort=11548, Loss=0.0037
+  Client 8: 4 epochs, 2354 samples, Effort=9416, Loss=0.0036
+  Client 2: 3 epochs, 2452 samples, Effort=7356, Loss=0.0039
+  Client 6: 3 epochs, 2254 samples, Effort=6762, Loss=0.0039
+Round 35 │ MSE=0.0007 │ PSNR=31.75 dB │ Avg Loss=0.0037 │ Loss Std=0.0001
+         │ Participation Gini=0.121 │ Effort Gini=0.161
+--------------------------------------------------------------------------------
+
+Training completed!
+
+Final Fairness Analysis:
+Participation distribution: [28, 19, 22, 15, 28, 19, 25, 21, 15, 18]
+Total effort distribution: [266984, 166736, 193192, 122155, 268491, 146510, 236816, 178904, 110430, 163556]
+Participation Gini coefficient: 0.121
+Effort Gini coefficient: 0.161
+Generating final reconstruction comparison...
+(base) simurgh@simurgh SemComSim % 
